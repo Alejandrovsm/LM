@@ -57,35 +57,35 @@ li a:hover{
 }
 
 .vertical-menu {
-        width: 213px; 
-        float: left;
-        position: fixed;
+    width: 213px; 
+    float: left;
+    position: absolute;
 }
       
 .vertical-menu a {
-        background-color: rgb(150, 203, 238); 
-        color: black; 
-        display: block; 
-        padding: 12px;
-        text-decoration: none; 
-        margin-left: -10px;
-        width: 160px;
+    background-color: rgb(150, 203, 238); 
+    color: black; 
+    display: block; 
+    padding: 12px;
+    text-decoration: none; 
+    margin-left: -10px;
+    width: 160px;
 }
       
 .vertical-menu a:hover {
-        background-color: #ccc; 
+    background-color: #ccc; 
 }
       
 .vertical-menu a.active {
-        background-color: mediumaquamarine;
-        color: white;
+    background-color: mediumaquamarine;
+    color: white;
 }
 .vertical-menu li{
-          list-style: none;
+    list-style: none;
 }
 a.dropdown-arrow:after {
-        content: "\25BE";
-        margin-left: 5px;
+    content: "\25BE";
+    margin-left: 5px;
 }
 .ejercicios{
     text-decoration: underline;
