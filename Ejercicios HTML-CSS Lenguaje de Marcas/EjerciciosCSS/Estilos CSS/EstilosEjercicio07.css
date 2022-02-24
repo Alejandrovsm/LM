@@ -1,0 +1,76 @@
+body{
+    background-image: url(https://www.xtrafondos.com/wallpapers/paisaje-digital-en-atardecer-5846.jpg);
+}
+.top{
+    background-color: turquoise;
+    position: top;
+    border: solid white 2px;
+    height: 200px;
+}
+.topinside{
+    background-color: blueviolet;
+    justify-items: end;
+    border: solid red 2px;
+    height: 60px;
+    width: 60px;
+}
+.barra{
+    float: left;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+.bottom{
+
+}
+.bottominside{
+    
+}
+.closebottom{
+
+}
+.closebottominside{
+
+}
+button{
+    padding: 5px;
+    margin-right: 4px;
+}
+li a {
+    display: block;
+    width: 90px;
+}
+li a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.vertical-menu {
+        width: 213px; 
+        float: left;
+        position: fixed;
+}
+      
+.vertical-menu a {
+        background-color: rgb(114, 38, 177); 
+        color: black; 
+        display: block; 
+        padding: 12px;
+        text-decoration: none; 
+        margin-left: -10px;
+        width: 160px;
+}
+      
+.vertical-menu a:hover {
+        background-color: rgb(243, 134, 210); 
+}
+      
+.vertical-menu a.active {
+        background-color: mediumaquamarine;
+        color: white;
+}
+.vertical-menu li{
+          list-style: none;
+}
+a.dropdown-arrow:after {
+        content: "\25BE";
+        margin-left: 5px;
+}

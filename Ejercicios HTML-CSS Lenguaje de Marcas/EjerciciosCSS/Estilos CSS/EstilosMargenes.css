@@ -1,0 +1,64 @@
+
+.titulo{
+    background-color: rgb(95, 143, 233);
+    border: solid black 2px;
+    border-radius: 5%;
+    margin-top: -10px;
+    margin-bottom: -15px;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+.titulo h1{
+    color: rgb(107, 16, 16);
+    text-shadow: brown 2px 2px 2px;
+    text-decoration: underline;
+    text-decoration-color: darkred;
+}
+body{
+    background-image: url(https://www.xtrafondos.com/wallpapers/casa-kame-de-dragon-ball-3963.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#padre{
+    border: 4px black solid;
+    width: 700px;
+    height: 500px;
+    margin: auto;
+}
+img{
+    border: 3px red solid;
+    background-color: rgb(230, 158, 99);
+}
+.img-responsive{
+    width: 586px;
+    height: 440px;
+    padding: 27px 54px;
+}
+.img-responsive2{
+    width: 300px;
+    height: 225px;
+    padding: 10px;
+    margin: 10px;
+}
+.titulo h2{
+    color: rgb(107, 19, 19);
+    text-shadow: rgb(197, 23, 197) 2px 2px 2px;
+    text-decoration: underline;
+    text-decoration-color: rgb(107, 19, 19);
+}
+.centro{
+    margin-left: 125px;
+}
+button{
+    padding: 5px;
+    margin-right: 4px;
+    float: left;
+}
+a:hover{
+    color: rgb(243, 243, 243);
+    transition: 0,5s ease-in;
+}
+button{
+    background-color: rgb(49, 137, 252);
+}
