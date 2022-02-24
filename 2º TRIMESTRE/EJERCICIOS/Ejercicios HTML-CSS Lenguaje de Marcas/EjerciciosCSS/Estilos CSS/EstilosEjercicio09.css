@@ -1,0 +1,29 @@
+button{
+    background: rgb(0, 255, 170);
+}
+
+button :hover{
+    color: blueviolet;
+}
+
+img{
+    width: 300px;
+    height: 225px;
+    border: 3px black solid;
+    margin: 15px;
+}
+
+.uno{
+    float: left;
+}
+
+.dos{
+    float: right;
+}
+
+body{
+    background: url("https://wallpaperaccess.com/full/1581348.jpg");
+}
+p{
+    color: white;
+}
