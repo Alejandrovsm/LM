@@ -1,7 +1,3 @@
-*{
-    
-}
-
 body{
     color: #B1967C;
     font-family: Palatino Linotype, Baskerville;
@@ -44,4 +40,8 @@ h2{
     padding: 0px 0px 10px 80px;
 
 
+}
+button{
+    margin-left: 30px;
+    background: #CDE6FF;
 }
