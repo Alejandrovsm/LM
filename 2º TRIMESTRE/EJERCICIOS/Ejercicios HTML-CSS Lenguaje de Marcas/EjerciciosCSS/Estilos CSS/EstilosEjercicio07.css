@@ -1,44 +1,98 @@
 body{
     background-image: url(https://www.xtrafondos.com/wallpapers/paisaje-digital-en-atardecer-5846.jpg);
 }
-.top{
-    background-color: turquoise;
-    position: top;
-    border: solid white 2px;
-    height: 200px;
+
+#wrapper{
+    background: linear-gradient(75deg, rgba(245, 210, 13, 0.767) 50%, rgba(0, 0, 0, 0.473) 50% 100% );
+    width: 90% inherit;
+    height: 600px;
+    margin: 0px auto 0px auto;
+    border: #000 solid 1px;
 }
-.topinside{
-    background-color: blueviolet;
-    justify-items: end;
-    border: solid red 2px;
+
+#banner{
+    color: #FFF660;
+    height: 75px;
+    border-bottom: solid #000 1px;
+}
+
+#signup{
+    width: 180px;
+    height: 30px;
+    background-color: #9900cc94;
+    border: solid #000 1px;
+    float: right;
+    margin: 5px 5px 0px 0px;
+}
+
+#main{
+    height: 300px;
+    background-color: #7309ddb7;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    border-bottom: solid rgb(0, 255, 213) 1px;
+}
+
+#tag{
+    width: 120px;
     height: 60px;
-    width: 60px;
+    background-color: #5c4637;
+    border: solid #000 1px;
+    float:right;
+    margin:100px 100px 0px 0px;
+    justify-content: center
 }
-.barra{
-    float: left;
-    margin-top: 50px;
-    margin-left: 10px;
-}
-.bottom{
+
+#news{
+    height: 500px;
+    width: 300px;
+    background-color: rgba(104, 255, 17, 0);
+    border-bottom: solid #000 1px;
+    display: inline-flex;
 
 }
-.bottominside{
+
+#footer{
+    height: 75px;
+    background-color: #21bceb8c;
+    justify-content: center;
+    border-bottom: solid #000 1px;
     
 }
-.closebottom{
 
+#testimony, #contact, #location{
+    margin:10px 0px 0px 50px;
+    background-color: #ff01b38e;
+    height: 55px;
+    border: solid 1px #000;
+    display: inline-flex;
 }
-.closebottominside{
+#testimony{
+    width: 25%;
+}
+#contact{
+    width:45%;
+}
 
+#location{
+    width: 15%;
 }
+
 button{
     padding: 5px;
     margin-right: 4px;
+    background: #9e68d4;
 }
+
+button :hover{
+    color: #fff;
+}
+
 li a {
     display: block;
     width: 90px;
 }
+
 li a:hover{
     color: rgb(255, 255, 255);
 }
@@ -47,10 +101,11 @@ li a:hover{
         width: 213px; 
         float: left;
         position: fixed;
+        top: 700px;
 }
       
 .vertical-menu a {
-        background-color: rgb(114, 38, 177); 
+        background-color: rgba(245, 169, 4, 0.863); 
         color: black; 
         display: block; 
         padding: 12px;
@@ -74,3 +129,5 @@ a.dropdown-arrow:after {
         content: "\25BE";
         margin-left: 5px;
 }
+
+
