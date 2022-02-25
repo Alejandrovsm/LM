@@ -40,7 +40,7 @@ td, th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
-  background-color: rgba(69, 69, 69, 0.25);
+  background-color: rgba(69, 69, 69, 0.603);
 }
 
 .contenedor {
@@ -53,21 +53,21 @@ td, th {
     background-color: rgba(0, 0, 255, 0.2);
 }
 .plar {
-    background-color: rgba(0, 255, 0, 0.2);
+    background-color: rgba(204, 36, 36, 0.479);
 }
 .fol {
-    background-color: rgba(112, 82, 2, 0.5);
+    background-color: rgba(23, 110, 84, 0.5);
 }
 .iso {
-    background-color: rgba(153,50,204, 0.5);
+    background-color: rgba(76, 14, 107, 0.616);
 }
 .lm {
-    background-color: rgba(255,0,0, 0.2);
+    background-color: rgba(255, 0, 149, 0.315);
 }
 .fuh {
     background-color: rgba(255,184,28, 0.5);
 }
 
 .recreo {
-    background: linear-gradient(45deg, rgba(0, 0, 255, 0.2) 20%, rgba(0, 255, 0, 0.2) 40%, rgba(153,50,204, 0.5) 60%, rgba(255,0,0, 0.2) 80%, rgba(255,184,28, 0.5) 100%);
+    background: linear-gradient(45deg, rgba(116, 94, 23, 0.589) 20%, rgba(28, 223, 28, 0.589) 40%, rgba(152, 44, 206, 0.5) 60%, rgba(36, 51, 185, 0.548) 80%, rgba(255,184,28, 0.5) 100%);
 }
