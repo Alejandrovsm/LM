@@ -11,7 +11,7 @@ body {
     
 }
 .nombretitulo {
-    background-color: aqua;
+    background-color: rgb(174, 85, 149);
     border: black;
     border-radius: 6px;
     border-style: groove;
@@ -37,15 +37,15 @@ a:hover{
     margin-left: 16%;
     margin-right: 3%;
     height:100%;
-    background-color: rgb(95, 189, 212);
+    background-color: rgb(174, 85, 149);
     border:solid black 2px;
     border-radius: 6px;
 }
 u{
-    color:rgb(79, 79, 212); ;
+    color:rgb(31, 31, 82); ;
 }
 button{
-    background-color: rgb(135, 211, 224);
+    background-color: rgb(161, 89, 203);
 }
 
 li a {
@@ -53,7 +53,7 @@ li a {
     width: 90px;
 }
 li a:hover{
-    color: rgb(209, 112, 2);
+    color: rgb(91, 211, 241);
 }
 
 .vertical-menu {
@@ -63,7 +63,7 @@ li a:hover{
 }
       
 .vertical-menu a {
-    background-color: rgb(150, 203, 238); 
+    background-color: rgb(174, 85, 149); 
     color: black; 
     display: block; 
     padding: 12px;
@@ -73,11 +73,11 @@ li a:hover{
 }
       
 .vertical-menu a:hover {
-    background-color: #ccc; 
+    background-color: rgb(163, 64, 64); 
 }
       
 .vertical-menu a.active {
-    background-color: mediumaquamarine;
+    background-color: rgb(49, 10, 73);
     color: white;
 }
 .vertical-menu li{
