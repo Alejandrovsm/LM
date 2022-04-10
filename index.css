@@ -3,7 +3,7 @@ body {
 }
 .header {
     background-color: indigo;
-    border: thin teal 12px;
+    border: thin rgb(14, 38, 75) 12px;
     border-radius: 4px;
     margin-left: 35%;
     margin-right: 35%;
@@ -11,7 +11,7 @@ body {
     
 }
 .nombretitulo {
-    background-color: aqua;
+    background-color: rgb(17, 82, 161);
     border: black;
     border-radius: 6px;
     border-style: groove;
@@ -37,15 +37,16 @@ a:hover{
     margin-left: 16%;
     margin-right: 3%;
     height:100%;
-    background-color: rgb(95, 189, 212);
+    background-color: rgb(17, 82, 161);
     border:solid black 2px;
     border-radius: 6px;
+    color: gold
 }
 u{
-    color:rgb(79, 79, 212); ;
+    color:rgb(237, 192, 27);
 }
 button{
-    background-color: rgb(135, 211, 224);
+    background-color: rgb(17, 82, 161);
 }
 
 li a {
@@ -53,7 +54,7 @@ li a {
     width: 90px;
 }
 li a:hover{
-    color: rgb(209, 112, 2);
+    color: rgb(73, 17, 87);
 }
 
 .vertical-menu {
@@ -63,8 +64,8 @@ li a:hover{
 }
       
 .vertical-menu a {
-    background-color: rgb(150, 203, 238); 
-    color: black; 
+    background-color: rgb(17, 82, 161); 
+    color: gold; 
     display: block; 
     padding: 12px;
     text-decoration: none; 
@@ -73,11 +74,11 @@ li a:hover{
 }
       
 .vertical-menu a:hover {
-    background-color: #ccc; 
+    background-color: rgb(227, 139, 233); 
 }
       
 .vertical-menu a.active {
-    background-color: mediumaquamarine;
+    background-color: rgb(19, 122, 87);
     color: white;
 }
 .vertical-menu li{
