@@ -1,0 +1,92 @@
+body {
+    background-image: url(https://www.wallpapertip.com/wmimgs/81-811946_fondos-de-pantalla-para-pc-8k.jpg);
+}
+.header {
+    background-color: indigo;
+    border: thin teal 12px;
+    border-radius: 4px;
+    margin-left: 35%;
+    margin-right: 35%;
+    text-align: center;
+    
+}
+.nombretitulo {
+    background-color: aqua;
+    border: black;
+    border-radius: 6px;
+    border-style: groove;
+    text-shadow: 2px 0px 2px black
+}
+h1 {
+    color: rgb(68, 4, 105);
+}
+a:hover{
+    color: rgb(236, 10, 10);
+    transition: 0,5s ease-in;
+}
+.botones{
+    padding-inline-start: 10px;
+    margin-left: 8px;
+    width: 70%;
+    position: sticky;
+    top: 15px;
+}
+
+.contenido{
+    padding: 1px;
+    margin-left: 16%;
+    margin-right: 3%;
+    height:100%;
+    background-color: rgb(95, 189, 212);
+    border:solid black 2px;
+    border-radius: 6px;
+}
+u{
+    color:rgb(79, 79, 212); ;
+}
+button{
+    background-color: rgb(135, 211, 224);
+}
+
+li a {
+    display: block;
+    width: 90px;
+}
+li a:hover{
+    color: rgb(209, 112, 2);
+}
+
+.vertical-menu {
+    width: 225px; 
+    float: left;
+    position: absolute;
+}
+      
+.vertical-menu a {
+    background-color: rgb(150, 203, 238); 
+    color: black; 
+    display: block; 
+    padding: 12px;
+    text-decoration: none; 
+    margin-left: -10px;
+    width: 170px;
+}
+      
+.vertical-menu a:hover {
+    background-color: #ccc; 
+}
+      
+.vertical-menu a.active {
+    background-color: mediumaquamarine;
+    color: white;
+}
+.vertical-menu li{
+    list-style: none;
+}
+a.dropdown-arrow:after {
+    content: "\25BE";
+    margin-left: 5px;
+}
+.ejercicios{
+    text-decoration: underline;
+}
