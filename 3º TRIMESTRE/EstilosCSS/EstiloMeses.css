@@ -1,5 +1,5 @@
 .aqui {
-    color: blue;
+    color: red;
     text-decoration: underline;
 }
 .aqui:hover {
@@ -30,3 +30,12 @@ div#tooltip a:hover {text-indent:0;}
 #tooltip button { border-radius: 50%;
     border: 1px solid black;
     padding-top: 3px; }
+
+body{
+    background-color: black;
+}
+
+.caja{
+    border: 6px pink double;
+    background-color: white;
+}
