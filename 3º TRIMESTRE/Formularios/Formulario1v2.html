@@ -4,14 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indice ejercicios HTML con estilos CSS</title>
+    <title>Formulario POST</title>
     <link rel="stylesheet" href="..\EstilosCSS\EstiloFormulario01.css">
 
 </head>
 <body>
-    <button><a href="---"><strong>Siguiente ejercicio</strong></a><br></button>    
+
+    <button><a href="---"><strong>Siguiente ejercicio</strong></a><br></button>
+    button><a href="--"><strong>Anterior ejercicio</strong></a></button>    
     <button><a href="../index.html"><strong>Volver p&aacute;gina principal</strong></a></button>
 
-
+    <form action="php/post_cv.php" method="post">
+        <fieldset>
+            <legend><h2>Rellena tu CV</h2></legend>
+            <div class="field">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" type="text" maxlength="30" size="30" placeholder="Jhon">
+            </div>
+            <div class="field">
+                <label for="apellidos">Apellidos</label>
+                <input name="apellidos" id="apellidos" maxlength="80" size="80" type="text" placeholder="Dough">
+            </div>
+            <div class="field">
+                <label for="contrasenya">Contrase&ntildea</label>
+                <input name="contrasenya" id="contrasenya" type="password" max="30" size="30">
+            </div>
+            <div class="field">
+                <label for="dni">DNI</label>
+                <input name="dni" id="dni" type="text" size="9" maxlength="9" placeholder="12345678A">
+            </div>
+            <div class="field">
+                <span>G&eacute;nero</span>
+                <input  type="radio" name="genero" id="hombre" value="Hombre" checked="checked">
+                <label for="hombre">Hombre</label>
+                <input  type="radio" name="genero" id="mujer" value="Mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+            <div class="field">
+    
+            </div>
+            <div class="field">
+                <input name="suscribe" type="checkbox" id="suscribe" checked="checked">
+                <label for="suscribe">Suscribirme al bolet&iacute;n de novedades</label>
+            </div>
+            <div class="field">
+                <label for="image">Incluir mi foto</label>
+                <input type="file" name="image" id="image">
+            </div>
+            <div class="buttons">
+                <input type="submit" name="enviar" value="Guardar cambios">
+                <input type="reset" name="borrar" value="Borrar los datos incluidos">
+            </div>
+        </fieldset>
 </body>
 </html>

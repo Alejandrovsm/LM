@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indice ejercicios HTML con estilos CSS</title>
+    <title>Formulario GET</title>
     <link rel="stylesheet" href="..\EstilosCSS\EstiloFormulario01.css">
 
 </head>
@@ -12,6 +12,43 @@
     <button><a href="---"><strong>Siguiente ejercicio</strong></a><br></button>    
     <button><a href="../index.html"><strong>Volver p&aacute;gina principal</strong></a></button>
 
+    <form action="php/insertar_cv.php" method="get/post">
+        <fieldset>
+        <legend><h2>Rellena tu CV</h2></legend><br>
+        <div>
+        <label for="nombre">Nombre</label>
+        <input name="nombre" type=" text" value="" size="30" maxl>
+        </div><br>
+        <div>
+        <label for="apellidos">Apellidos</label>
+        <input name="Apellidos" type=" text" value="" size="80" maxl>
+        </div><br><br>
+        <div>
+        <label for="contraseña">Contraseña</label>
+        <input name="contraseña" type=" text" value="" size="30" maxl>
+        </div><br><br>
+        <div>
+        <label for="dni">DNI</label>
+        <input name="nombre" type=" text" value="" size="9" maxl>
+        </div><br><br>
+        <div></div>
+        <legend>Sexo</legend>
+            <input type="radio" name="estado" value="Hombre" checked="checked"> Hombre<br>
+            <input type="radio" name="estado" value="Mujer"> Mujer<br>
+        </div><br>
+        <div>
+            <input name="afi_musica" type="checkbox" value="musica" checked="checked"> Subscribirme al boletín de novedades<br>
+        </div><br>
+        <div>
+            <label for="myfile">Incluir mi foto:</label>
+            <input type="text" value="" size="30">
+            <input type="file" id="myfile" name="myfile">
+            <br><br>
+        </div>
+        <div>
+        <input type="submit" name="enviar" value="Guardar cambios">
+        <input type="reset" name=" cancelar" value="Borrar los datos incluidos">
+        </div>
 
 </body>
 </html>
