@@ -6,15 +6,15 @@ body{
     padding: 25px;
     width: 360px;
     margin: 10px auto;
-    border-top: 2px solid rgba(255, 217, 0, 0.295);
-    border-right: 2px solid #dcecb685;
-    border-bottom: 5px solid #b2b6b241;
-    border-left: 4px solid rgba(255, 217, 0, 0.295);
-    border-radius: 5px 40px 5px 40px;
+    border-top: 2px solid rgba(6, 255, 40, 0.295);
+    border-right: 2px solid rgba(81, 199, 96, 0.295);
+    border-bottom: 5px solid rgba(73, 242, 95, 0.295);
+    border-left: 4px solid rgba(6, 255, 39, 0.782);
+    border-radius: 6px 10px 6px 10px;
     box-sizing: border-box;
     color: #fff;
-    text-shadow: 1.9px 0.5px 2px rgba(107, 34, 107, 0.911);
-    background: rgba(255, 255, 255, 0.473);
+    text-shadow: 1.9px 0.5px 2px rgba(240, 10, 240, 0.911);
+    background: rgba(165, 162, 162, 0.886);
     text-align: center;
 }
 h2{
@@ -28,10 +28,11 @@ h2{
     letter-spacing: 5px;
     text-shadow: 3px 0px 0.5px rgb(168, 144, 7);
     color:transparent;
+    text-decoration: underline;
 }
 
 h3{
-    color: #80cee1;
+    color: #05f99b;
 }
 .caja3{
 
