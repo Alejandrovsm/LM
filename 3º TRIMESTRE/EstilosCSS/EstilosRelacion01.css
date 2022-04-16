@@ -53,9 +53,8 @@ h3{
     border-right: 2px solid #dcecb685;
     border-bottom: 5px solid #b2b6b241;
     border-left: 4px solid #e4ecb618;
-    border-radius: 5px 40px 5px 40px;
+    border-radius: 8px 10px 8px 10px;
     box-sizing: border-box;
-
     background: rgba(255, 255, 255, 0.247);
     
 }
