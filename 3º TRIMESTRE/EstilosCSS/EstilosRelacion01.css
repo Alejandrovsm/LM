@@ -49,30 +49,21 @@ h3{
     margin: 0 auto;
     text-align: justify;
     box-sizing: border-box;
-    border-top: 2px solid #dcecb685;
-    border-right: 2px solid #dcecb685;
-    border-bottom: 5px solid #b2b6b241;
-    border-left: 4px solid #e4ecb618;
+    border-top: 2px solid #11111085;
+    border-right: 2px solid #11111085;
+    border-bottom: 5px solid #11111085;
+    border-left: 4px solid #11111085;
     border-radius: 8px 10px 8px 10px;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.247);
+    background: rgba(26, 168, 55, 0.247);
     
 }
 .salida:hover{
-    background: rgb(112, 102, 11);
-    border-top: 2px solid #fff;
-    border-right: 2px solid rgba(255, 217, 0, 0.295);
-    border-bottom: 5px solid #fff;
-    border-left: 4px solid rgba(255, 217, 0, 0.295);
+    border-top: 2px solid rgba(188, 224, 177, 0.295);
+    border-right: 2px solid rgba(188, 224, 177, 0.295);
+    border-bottom: 5px solid rgba(188, 224, 177, 0.295);
+    border-left: 4px solid rgba(188, 224, 177, 0.295);
     transition: .5s;
-    background: rgba(235, 232, 232, 0.342);
-
-}
-
-
-
-button{
-    margin: 5px 5px;
 }
 
 .left{
