@@ -1,3 +1,117 @@
 body{
     background-image: url(https://i.pinimg.com/originals/0f/88/3e/0f883e6f5db348671c1e26a7dfd2e5f3.gif);
 }
+
+.caja2{
+    padding: 25px;
+    width: 360px;
+    margin: 10px auto;
+    border-top: 2px solid rgba(255, 217, 0, 0.295);
+    border-right: 2px solid #dcecb685;
+    border-bottom: 5px solid #b2b6b241;
+    border-left: 4px solid rgba(255, 217, 0, 0.295);
+    border-radius: 5px 40px 5px 40px;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 1.9px 0.5px 2px rgba(107, 34, 107, 0.911);
+    background: rgba(255, 255, 255, 0.473);
+    text-align: center;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    text-align: center;
+    font-style: italic;
+    font-size:2em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 3px 0px 0.5px rgb(168, 144, 7);
+    color:transparent;
+}
+
+h3{
+    color: #80cee1;
+}
+.caja3{
+
+    padding: 4px;
+    width: 90%;
+    margin: 10px auto;
+    text-align: left;
+    
+}
+
+.salida{
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    box-sizing: border-box;
+    border-top: 2px solid #dcecb685;
+    border-right: 2px solid #dcecb685;
+    border-bottom: 5px solid #b2b6b241;
+    border-left: 4px solid #e4ecb618;
+    border-radius: 5px 40px 5px 40px;
+    box-sizing: border-box;
+
+    background: rgba(255, 255, 255, 0.247);
+    
+}
+.salida:hover{
+    background: rgb(112, 102, 11);
+    border-top: 2px solid #fff;
+    border-right: 2px solid rgba(255, 217, 0, 0.295);
+    border-bottom: 5px solid #fff;
+    border-left: 4px solid rgba(255, 217, 0, 0.295);
+    transition: .5s;
+    background: rgba(235, 232, 232, 0.342);
+
+}
+
+
+
+button{
+    margin: 5px 5px;
+}
+
+.left{
+    text-align: left;
+}
+.center{
+    margin: 5px auto;
+    text-align: center;
+}
+
+hr{
+    margin: 20px auto;
+    color: pink;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+
+}
+
+a{
+    transition: 2s;
+}
+a:active{
+    transition: 2s;
+}
+.cyan{
+    color:blue;
+}
+
+.input-entrada{
+    border: 1px pink solid;
+    background-color: #def;
+    color: #300;
+}
+
+.input-entrada:hover{
+    border: 1px pink solid;
+    background-color: rgb(238, 246, 253);
+    
+    transition: .2s;
+}
