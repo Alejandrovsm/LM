@@ -1,8 +1,8 @@
 body{
-    background: url(Imagenes/AA12.gif);
+    background: url(https://i.gifer.com/ZShU.gif);
     background-attachment: fixed;
     font-family: Verdana, sans-serif;
-    color: #355;
+    color: rgba(157, 65, 180, 0.599);
 }
 
 
@@ -15,8 +15,8 @@ body{
 
 .caja2{
     background: rgba(240, 255, 255, 0.712);
-    border: 7px solid rgba(31, 216, 93, 0.288);
-    border-radius: 50px;
+    border: 7px solid rgba(19, 208, 189, 0.582);
+    border-radius: 80px 50px 80px 50px;
     width: 400px;
     margin: 0 auto;
     margin-top: 20px;
@@ -31,8 +31,8 @@ label{
 
 .entrada{
 
-    background-color: rgba(31, 216, 93, 0.288);
-    border: 1px solid rgba(31, 216, 93, 0.993);;
+    background-color: rgba(35, 70, 175, 0.288);
+    border: 1px solid rgba(84, 27, 227, 0.993);;
     margin: 5px;
     height: 15px;
     border-radius: 10px;
@@ -41,8 +41,8 @@ label{
 }
 .salida{
 
-    background-color: rgba(31, 216, 93, 0.288);
-    border: 1px solid rgba(31, 216, 93, 0.993);;
+    background-color: rgba(35, 70, 175, 0.288);
+    border: 1px solid rgba(84, 27, 227, 0.993);;
     margin: 5px;
     height: auto;
     border-radius: 10px;
@@ -51,8 +51,8 @@ label{
 }
 
 .entrada-boton{
-    background-color: rgba(31, 216, 93, 0.288);
-    border: 1px solid rgba(31, 216, 93, 0.993);;
+    background-color: rgba(35, 70, 175, 0.288);
+    border: 1px solid rgba(84, 27, 227, 0.993);;
     margin: 5px;
     border-radius: 10px;
     padding: 10px;
@@ -60,12 +60,12 @@ label{
 }
 
 .entrada:hover, .entrada-boton:hover{
-    background-color: rgba(182, 216, 31, 0.288);
+    background-color: rgba(202, 244, 15, 0.553);
     transition: .5s;
 }
 
 hr{
-    background-color: rgba(31, 216, 93, 0.288);
+    background-color: rgba(19, 208, 189, 0.582  );
     height: 2px;
 }
 
