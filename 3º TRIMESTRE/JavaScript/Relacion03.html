@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="..\EstilosCSS\EstilosRelacion03.css">
     <script src="Relacion03.js"></script>
-    <script src="Relacion03v2.js"></script>
     <title>Relacion 03 JavaScript</title>
 </head>
 <body>
@@ -12,294 +11,169 @@
     <button><a href="Relacion02.html"><strong>Anterior ejercicio</strong></a></button>    
     <button><a href="../index.html"><strong>Volver p&aacute;gina principal</strong></a></button><br><br>
 
-    <form class="formulario" id="ej01">
-        <div class="titulo">Ejercicio 01</div>
-        <div class="enunciado">
-			Escribe una función llamada potencia que reciba dos argumentos y devuelva como
-			resultado la potencia del primer número elevado al segundo.
-		</div>
-        <div class="input-container">
-            <input id="i1" class="input" type="number" placeholder=" " />
-            <div class="cut"></div>
-            <label for="i1" class="placeholder">Base</label>
+        <div class="caja2">
+            <h2>Ejercicio 0</h2>
+            <p>Crea un fichero llamado funciones.js en el que guardarás
+                todas las funciones de este tema.</p>
         </div>
-		<div class="input-container">
-            <input id="i2" class="input" type="number" placeholder=" " />
-            <div class="cut"></div>
-            <label for="i2" class="placeholder">Exponente</label>
-        </div>
-		<div class="container">
-			<q onclick="ejercicio01()"><span>Calcular Potencia</span></q>
-			<div class="respuesta" id="uno"></div>
-		</div>
-    </form>
 
-    <form class="formulario" id="ej02">
-        <div class="titulo">Ejercicio 02</div>
-        <div class="enunciado">
-			Escribe una función llamada par que devuelva true si el número recibido es par y
-			false si es impar.
-		</div>
-        <div class="input-container">
-            <input id="i3" class="input" type="number" placeholder=" " />
-            <div class="cut"></div>
-            <label for="i3" class="placeholder">Número</label>
-        </div>
-		<div class="container">
-		<q onclick="ejercicio02()"><span>¿es par?</span></q>
-		<div class="respuesta" id="dos"></div>
-	</div>
-    </form>
+        <div class="caja2">
+            <h2>Ejercicio 1</h2>
+            <p>Escribe una función llamada <b>potencia</b> que reciba dos
+                argumentos y devuelvela como resultado de la potencia del
+                primer número elevado al segundo.</p>
+            <input type="number" class="entrada" id="ej1a" value="0">
+            <input type="number" class="entrada" id="ej1b" value="0">
 
-	<form class="formulario" id="ej03">
-        <div class="titulo">Ejercicio 03</div>
-        <div class="enunciado">
-			Inserta la cantidad media de horas MENSUALES trabajadas y el precio por hora. Se calculará el IRPF
-		</div>
-        <div class="input-container">
-            <input id="i4" class="input" type="number" placeholder=" " />
-            <div class="cut cut-long"></div>
-            <label for="i4" class="placeholder">Horas trabajadas</label>
-        </div>
-		<div class="input-container">
-            <input id="i5" class="input" type="number" placeholder=" " />
-            <div class="cut cut-long"></div>
-            <label for="i5" class="placeholder">Precio Hora</label>
-        </div>
-		<div class="container">
-			<q onclick="ejercicio03()"><span>calcular sueldo</span></q>
-			<div class="respuesta" id="tres"></div>
-		</div>
-	</form>
-
-	<form class="formulario" id="ej04">
-        <div class="titulo">Ejercicio 04</div>
-        <div class="enunciado">
-			Función llamada factura que recibe el precio unitario de un producto, el número de
-			unidades compradas, el descuento aplicado y el IVA y devuelva el total.
-		</div>
-        <div class="input-container">
-            <input id="i6" class="input" type="number" placeholder=" " />
-            <div class="cut cut-long"></div>
-            <label for="i6" class="placeholder">Precio Unidad</label>
-        </div>
-		<div class="input-container">
-            <input id="i7" class="input" type="number" placeholder=" " />
-            <div class="cut cut-long"></div>
-            <label for="i7" class="placeholder">Cantidad Unidades</label>
-        </div>
-		<div class="input-container">
-            <input id="i8" class="input" type="number" placeholder=" " />
-            <div class="cut cut-long"></div>
-            <label for="i8" class="placeholder">Descuento</label>
-        </div>
-		<div class="input-container">
-            <input id="i9" class="input" type="number" placeholder=" " />
-            <div class="cut cut-long"></div>
-            <label for="i9" class="placeholder">IVA</label>
-        </div>
-		<div class="container">
-			<q onclick="ejercicio04()"><span>calcular</span></q>
-			<div class="respuesta" id="cuatro"></div>
-		</div>
-    </form>
-
-	<form class="formulario" id="ej05">
-        <div class="titulo">Ejercicio 05</div>
-        <div class="enunciado">
-			Función llamada factura que recibe el precio unitario de un producto, el número de
-			unidades compradas, el descuento aplicado y el IVA y devuelva el total.
-		</div>
-		<div class="inrad">
-
-            <div class="radiobutt">
-                <input id="ftoc" class="radio" type="radio" name="temp" value="farc" checked="checked">
-                <label for="ftoc" class="radiolabel">Farenheint a Celsius</label>
-            </div>
-
-            <div class="radiobutt">
-                <input id="ctof" class="radio" type="radio" name="temp" value="celf">
-                <label for="ctof" class="radiolabel">Celsius a Farenheint</label>
-            </div>
+            <button onclick="ej1()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida1"></div>
 
         </div>
 
-        <div class="input-container">
-            <input id="e5i1" class="input" type="number" placeholder=" " />
-            <div class="cut cut-long"></div>
-            <label for="e5i1" class="placeholder">Temperatura</label>
+
+        <div class="caja2">
+            <h2>Ejercicio 2</h2>
+            <p>Escribe una función llamada <b>par</b> que devuelva <b>true</b>
+                si el número recibido es par y <b>false</b> si es impar.</p>
+            <input type="number" class="entrada" id="ej2a" value="0">
+            <button onclick="ej2()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida2"></div>
+
         </div>
 
-		<div class="container">
-			<q onclick="ejercicio05()"><span>calcular</span></q>
-			<div class="respuesta" id="cinco"></div>
-		</div>
-    </form>
+        <div class="caja2">
+            <h2>Ejercicio 3</h2>
+            <p>Escribe una función llamada <b>sueldo</b> que reciba tres argumentos
+                y calcule el sueldo del mes de un empleado a partir del número de horas
+                trabajadas, el precio por hora y el IRPF</p>
+                <input type="number" class="entrada" id="ej3a" value="0">
+                <label for="">Precio por hora</label>
+            <input type="number" class="entrada" id="ej3b" value="0">
+            <label for="">Nº Horas al dia</label>
+            <input type="number" class="entrada" id="ej3c" value="0">
+            <label for="">IRPF</label>
+            <br>
+            <button onclick="ej3()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida3"></div>
 
-	<form class="formulario" id="ej06">
-        <div class="titulo">Ejercicio 06</div>
-        <div class="enunciado">
-			Escribe una función llamada mayor que reciba como parámetros dos números
-			enteros y devuelva el mayor.
-		</div>
-        <div class="input-container">
-            <input id="e6i1" class="input" type="number" placeholder=" ">
-            <div class="cut cut-long"></div>
-            <label for="e6i1" class="placeholder">Número 1</label>
-        </div>
-		<div class="input-container">
-            <input id="e6i2" class="input" type="number" placeholder=" ">
-            <div class="cut cut-long"></div>
-            <label for="e6i2" class="placeholder">Número 2</label>
+
         </div>
 
-		<div class="container">
-			<q onclick="ejercicio06()"><span>calcular</span></q>
-			<div class="respuesta" id="seis"></div>
-		</div>
-	</form>
+        <div class="caja2">
+            <h2>Ejercicio 4</h2>
+            <p>Función llamada <b>factura</b> que recibe el precio unitario
+                de unidades compradas, el descuento aplicado, el IVA y el total.</p>
+            <input type="number" class="entrada" id="ej4a" value="">
+            <label for="">Precio Und</label>
+            <input type="number" class="entrada" id="ej4b" value="">
+            <label for="">Cantidad</label>
+            <input type="number" class="entrada" id="ej4c" value="">
+            <label for="">Descuento %</label>
+            <input type="number" class="entrada" id="ej4d" value="">
+            <label for="">IVA %</label>
+            <br>
+            <button onclick="ej4()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida4"></div>
 
-	<form class="formulario" id="ej07">
-        <div class="titulo">Ejercicio 07</div>
-        <div class="enunciado">
-			Escribe una función llamada primo que reciba un número entero y devuelva si es
-			primo o no.
-		</div>
-        <div class="input-container">
-            <input id="e7i1" class="input" type="number" placeholder=" ">
-            <div class="cut cut-long"></div>
-            <label for="e7i1" class="placeholder">Número 1</label>
         </div>
-		<div class="container">
-			<q onclick="ejercicio07()"><span>calcular</span></q>
-			<div class="respuesta" id="siete"></div>
-		</div>
-</form>
 
-	<form class="formulario" id="ej08">
-        <div class="titulo">Ejercicio 08</div>
-        <div class="enunciado">
-			Función que calcule el área de un círculo, siendo esta A = PI * r2.
-		</div>
-        <div class="input-container">
-            <input id="e8i1" class="input" type="number" placeholder=" ">
-            <div class="cut cut-long"></div>
-            <label for="e8i1" class="placeholder">Radio</label>
+
+
+        <div class="caja2">
+            <h2>Ejercicio 5</h2>
+            <p>Escribe una función llamada <b>convertir</b> que pase de grados Celsius a Fahrenheit.
+                (F = (9/5)*C+32)</p>
+            <input type="number" class="entrada" id="ej5a" value="0">
+            <button onclick="ej5()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida5"></div>
+
         </div>
-		<div class="container">
-			<q onclick="ejercicio08()"><span>calcular</span></q>
-			<div class="respuesta" id="ocho"></div>
-		</div>
-</form>
 
-	<form class="formulario" id="ej09">
-        <div class="titulo">Ejercicio 09</div>
-        <div class="enunciado">
-			Escribe una función que reciba como argumento un número y muestre por pantalla
-			todos sus divisores.
-		</div>
-        <div class="input-container">
-            <input id="e9i1" class="input" type="number" placeholder=" ">
-            <div class="cut cut-long"></div>
-            <label for="e9i1" class="placeholder">Número</label>
+        <div class="caja2">
+            <h2>Ejercicio 6</h2>
+            <p>Escribe una función llamada <b>mayor</b> que reciba como parámetros
+                dos números enteros y devuelva el mayor.</p>
+            <input type="number" class="entrada" id="ej6a" value="0">
+            <input type="number" class="entrada" id="ej6b" value="0">
+            <button onclick="ej6()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida6"></div>
+
         </div>
-		<div class="container">
-			<q onclick="ejercicio09()"><span>calcular divisores</span></q>
-			<div class="respuesta" id="r9"></div>
-		</div>
-</form>
 
-	<form class="formulario" id="ej10">
-        <div class="titulo">Ejercicio 10</div>
-        <div class="enunciado">
-			Diseña una función llamada factorial que devuelva el factorial de un número
-			recibido como parámetro.
-		</div>
-        <div class="input-container">
-            <input id="e10i1" class="input" type="number" placeholder=" ">
-            <div class="cut cut-long"></div>
-            <label for="e10i1" class="placeholder">Número</label>
+        <div class="caja2">
+            <h2>Ejercicio 7</h2>
+            <p>Escribe una función llamada <b>primo</b> que reciba un número enteros
+                y devuelva si es primo o no.</p>
+            <input type="number" class="entrada" id="ej7a" value="0">
+            <button onclick="ej7()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida7"></div>
+
         </div>
-		<div class="container">
-			<q onclick="ejercicio10()"><span>calcular factorial</span></q>
-			<div class="respuesta" id="r10"></div>
-		</div>
-</form>
 
-	<form class="formulario" id="ej11">
-        <div class="titulo">Ejercicio 11</div>
-        <div class="enunciado">
-			Realiza una función llamada contar que reciba un número y devuelva la suma de sus
-			dígitos. Ejemplos: 25 (devuelve 7). 126 (devuelve 9).
-		</div>
-        <div class="input-container">
-            <input id="e11i1" class="input" type="number" placeholder=" ">
-            <div class="cut cut-long"></div>
-            <label for="e11i1" class="placeholder">Número</label>
+        <div class="caja2">
+            <h2>Ejercicio 8</h2>
+            <p>Función que calcule el <b>área</b> de un círculo, siendo esta A = PI * r2</p>
+            <input type="number" class="entrada" id="ej8a" value="0">
+            <button onclick="ej8()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida8"></div>
+
         </div>
-		<div class="container">
-			<q onclick="ejercicio11()"><span>sumar dígitos</span></q>
-			<div class="respuesta" id="r11"></div>
-		</div>
-</form>
 
-	<form class="formulario" id="ej12">
-        <div class="titulo">Ejercicio 12</div>
-        <div class="enunciado">
-			Escribe una función llamada binario que reciba un número decimal y devuelva una
-			cadena de caracteres con el valor binario del número recibido.
-		</div>
-        <div class="input-container">
-            <input id="e12i1" class="input" type="number" placeholder=" ">
-            <div class="cut cut-long"></div>
-            <label for="e12i1" class="placeholder">Número</label>
+
+        <div class="caja2">
+            <h2>Ejercicio 9</h2>
+            <p>Escribe una función que reciba como argumento un número y muestre
+                por pantalla todos sus <b>divisores</b>. </p>
+            <input type="number" class="entrada" id="ej9a" value="0">
+            <button onclick="ej9()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida9"></div>
+
         </div>
-		<div class="container">
-			<q onclick="ejercicio12()"><span>sumar dígitos</span></q>
-			<div class="respuesta" id="r12"></div>
-		</div>
-</form>
-<!--	<form class="formulario" id="ej03">-->
-<!--        <div class="titulo">Ejercicio 03</div>-->
 
-<!--        <div class="input-container">-->
-<!--            <input id="grupo" class="input" type="text" placeholder=" ">-->
-<!--            <div class="cut cut-long"></div>-->
-<!--            <label for="grupo" class="placeholder">Grupo</label>-->
-<!--        </div>-->
-<!--		<div class="input-container">-->
-<!--			<input list="bands" name="mbands" id="mbands" class="input" placeholder=" ">-->
-<!--			<div class="cut"></div>-->
-<!--			<label for="mbands" class="placeholder">&#45;&#45;Selecciona&#45;&#45;</label>-->
-<!--			<datalist id="bands">-->
-<!--				<option value="Guns N'Roses">-->
-<!--				<option value="Queen">-->
-<!--				<option value="AC/DC">-->
-<!--			</datalist>-->
-<!--        </div>-->
-<!--		<div class="input-container">-->
-<!--            <input id="alb" class="input" type="text" placeholder=" ">-->
-<!--            <div class="cut cut-long"></div>-->
-<!--            <label for="alb" class="placeholder">Album</label>-->
-<!--        </div>-->
-<!--		<div class="input-container">-->
-<!--            <input id="bnum" class="input" type="number" placeholder=" ">-->
-<!--            <div class="cut cut-long"></div>-->
-<!--            <label for="bnum" class="placeholder">Borrar Número...</label>-->
-<!--        </div>-->
 
-<!--		<div class="container">-->
-<!--			<q onclick="enviar()"><span>enviar</span></q>-->
-<!--			<q onclick="cancelar()"><span>cancelar</span></q>-->
-<!--			<q onclick="borrar()"><span>borrar</span></q>-->
-<!--		</div>-->
+        <div class="caja2">
+            <h2>Ejercicio 10</h2>
+            <p>Diseña una función llamada <b>factorial</b> que devuelvael factorial
+                de un número recibido como parámetro</p>
+            <input type="number" class="entrada" id="ej10a" value="0">
+            <button onclick="ej10()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida10"></div>
 
-<!--    </form>-->
-<!--	<div class="formulario" id="playlist">-->
-<!--		<div class="titulo2">GRUPAZOS</div>-->
-<!--		<ol id="grupazos"></ol>-->
-<!--	</div>-->
-<canvas id="c"></canvas>
-<script src="Relacion03v3.js"></script>
+        </div>
+
+        <div class="caja2">
+            <h2>Ejercicio 11</h2>
+            <h3>Revisar</h3>
+            <p>Realiza una función llamada <b>contar</b> que reciba un número y devuelva la
+                suma de sus dígitos. Ejemplos 25 (devuelve 7). 126 (devuelve 9).</p>
+            <input type="number" class="entrada" id="ej11a" value="0">
+            <button onclick="ej11()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida11"></div>
+
+        </div>
+
+
+        <div class="caja2">
+            <h2>Ejercicio 12</h2>
+            <h3>Revisar</h3>
+            <p>Escribe una función llamada <b>binario</b> que reciba un número decimal y
+                devuelva una cadena de caracteres con el valor binario del número recibido.</p>
+            <input type="number" class="entrada" id="ej12a" value="0">
+            <button onclick="ej12()" class="entrada-boton">Calcular</button>
+            <hr>
+            <div class="salida" id="salida12"></div>
+
+        </div>
 </body>
 </html>
