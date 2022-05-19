@@ -7,9 +7,406 @@
     <title>Relacion 02 JavaScript</title>
 </head>
 <body>
-    <button><a href="Relacion02ext.html"><strong>Siguiente ejercicio</strong></a><br></button>
+    <button><a href="Relacion03.html"><strong>Siguiente ejercicio</strong></a><br></button>
     <button><a href="Relacion01.html"><strong>Anterior ejercicio</strong></a></button>    
-    <button><a href="../index.html"><strong>Volver p&aacute;gina principal</strong></a></button>
+    <button><a href="../index.html"><strong>Volver p&aacute;gina principal</strong></a></button><br><br>
+    
+<!-- Ejercicio 0 -->
+<div class="caja2">
+    <h2>Ejercicio 0 (clase)</h2>
+    <p>Calcular si el número es primo</p>
+    <input type="number" id="ej0a"class="entrada-boton">
+    <button onclick="ej0()" class="entrada-boton">Calcular</button>
+    <hr>
+
+    <p class="salida" id="salida0"></p>
+</div>
+
+
+<!-- Ejercicio 1 -->
+<div class="caja2">
+    <h2>Ejercicio 1</h2>
+    <p>Introducir un número y determinar si está comprendido entre 1 y 10.</p>
+
+    <input type="number" class="entrada" id="ej1a" value="0">
+
+    <button onclick="ej1()" class="entrada-boton">Calcular</button>
+    <hr>
+
+
+    <p class="salida" id="salida1"></p>
+</div>
+
+
+
+
+
+<!-- Ejercicio 2 -->
+<div class="caja2">
+    <h2>Ejercicio 2</h2>
+    <p>Introduce un número y calcula si es positivo o negativo.</p>
+
+    <input type="number" class="entrada" id="ej2a" value="0">
+
+    <button onclick="ej2()" class="entrada-boton">Calcular</button>
+    <hr>
+
+
+    <p class="salida" id="salida2"></p>
+</div>
+
+
+
+
+
+
+<!-- Ejercicio 3 -->
+<div class="caja2">
+    <h2>Ejercicio 3</h2>
+    <p>Introduce tres números y determina cuál es el mayor.</p>
+    <input type="number" class="entrada" id="ej3a" value="0">
+    <input type="number" class="entrada" id="ej3b" value="0">
+    <input type="number" class="entrada" id="ej3c" value="0">
+    <button onclick="ej3()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida3"></p>
+</div>
+
+
+
+<!-- Ejercicio 4 -->
+<div class="caja2">
+    <h2>Ejercicio 4</h2>
+    <p>Introduce tres números y muéstralos ordenados de menor a mayor</p>
+    <input type="number" class="entrada" id="ej4a" value="0">
+    <input type="number" class="entrada" id="ej4b" value="0">
+    <input type="number" class="entrada" id="ej4c" value="0">
+    <button onclick="ej4()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida4"></p>
+</div>
+
+
+
+
+
+<!-- Ejercicio 5 -->
+<div class="caja2">
+    <h2>Ejercicio 5</h2>
+    <p>Introducir una nota numérica y devolver Suficiente, Notable, Bien, con switch.</p>
+    <input type="number" class="entrada" id="ej5a" value="0">
+    <button onclick="ej5()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida5"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 6 -->
+<div class="caja2">
+    <h2>Ejercicio 6</h2>
+    <p>Programa que imprima los números impares comprendidos entre 100 y 200.</p>
+    <button onclick="ej6()" class="entrada-boton">Calcular</button>
+    <hr>
+    <div class="salida">
+        <p id="salida6"></p>
+    </div>
+</div>
+
+
+
+
+<!-- Ejercicio 7 -->
+<div class="caja2">
+    <h2>Ejercicio 7</h2>
+    <p>Programa que muestre todos los múltiplos de 3 comprendidos entre 1 y 100.</p>
+    <button onclick="ej7()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida7"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 8 -->
+<div class="caja2">
+    <h2>Ejercicio 8</h2>
+    <p>Calcular la suma de todos los múltiplos de cinco comprendidos entre 1 y 100.</p>
+    <input type="number" class="entrada" id="ej8a" value="0">
+    <input type="number" class="entrada" id="ej8b" value="0">
+    <button onclick="ej8()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida8"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 9 -->
+<div class="caja2">
+    <h2>Ejercicio 9</h2>
+    <p>Calcula la suma de todos los pares comprendidos entre 1 y 1000 y muéstralo.</p>
+    <button onclick="ej9()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida9"></p>
+    <a href="../Recursos/arrays.html"><button class="entrada-boton">Array</button></a>
+</div>
+
+
+
+
+<!-- Ejercicio 10 -->
+<div class="caja2">
+    <h2>Ejercicio 10</h2>
+    <p>Calcula la suma de todos los números comprendidos entre dos números
+        introducidos por teclado.</p>
+    <input type="number" class="entrada" id="ej10a" value="0">
+    <input type="number" class="entrada" id="ej10b" value="0">
+    <button onclick="ej10()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida10"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 11 -->
+<div class="caja2">
+    <h2>Ejercicio 11</h2>
+    <p>Introduce un número y calcula si es par o impar con bucles.</p>
+    <input type="number" class="entrada" id="ej11a" value="0">
+    <button onclick="ej11()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida11"></p>
+</div>
+
+
+
+<!-- Ejercicio 12 -->
+<div class="caja2">
+    <h2>Ejercicio 12</h2>
+    <p>Introducir número y exponente y calcular la potencia usando bucles.</p>
+    <input type="number" class="entrada" id="ej12a" value="0">
+    <input type="number" class="entrada" id="ej12b" value="0">
+
+    <button onclick="ej12()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida12"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 13 -->
+<div class="caja2">
+    <h2>Ejercicio 13</h2>
+    <p>Lee todos los números hasta introducir el cero y súmalos (prompt).</p>
+    <button onclick="ej13()" class="entrada-boton">Prompt</button>
+    <hr>
+    <p class="salida" id="salida13"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 14 -->
+<div class="caja2">
+    <h2>Ejercicio 14</h2>
+    <p>Lee todos los números hasta introducir el cero y calcula la media (prompt).</p>
+    <button onclick="ej14()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida14"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 15 -->
+<div class="caja2">
+    <h2>Ejercicio 15</h2>
+    <p>Lee todos los números hasta introducir el cero y calcula el máximo y el mínimo.</p>
+    <input type="number" class="entrada" id="ej15a" value="0">
+    <button onclick="ej15()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida15"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 16 -->
+<div class="caja2">
+    <h2>Ejercicio 16</h2>
+    <h3>No me funcionó</h3>
+    <p>Calcula la división de dos números introducidos utilizando restas sucesivas.</p>
+    <input type="number" class="entrada" id="ej16a" value="0">
+    <input type="number" class="entrada" id="ej16b" value="0">
+    <button onclick="ej16()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida16"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 17 -->
+<div class="caja2">
+    <h2>Ejercicio 17</h2>
+    <p>Introducir números por teclado y contar los positivos y los negativos. El programa
+        termina cuando se introduce un cero y muestra los resultados.</p>
+    <input type="number" class="entrada" id="ej17a" value="0">
+    <button onclick="ej17()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida17"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 18 -->
+<div class="caja2">
+    <h2>Ejercicio 18</h2>
+    <h3><i>Falta que el cuadrado lo haga acada uno de los elementos del array18</h3>
+        <p>Calcula el cuadrado de todos los números comprendidos entre dos números
+            introducidos por teclado.</i></p>
+    <input type="number" class="entrada" id="ej18a" value="0">
+    <input type="number" class="entrada" id="ej18b" value="0">
+    <button onclick="ej18()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida18"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 19 -->
+<div class="caja2">
+    <h2>Ejercicio 19</h2>
+    <h3>revisar</h3>
+    <p>Escribe un programa que calcule la multiplicación de dos números introducidos por
+        teclado sin utilizar el operador * (usando sumas sucesivas).</p>
+    <input type="number" class="entrada" id="ej19a" value="0">
+    <input type="number" class="entrada" id="ej19b" value="0">
+    <button onclick="ej19()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida19"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 20 -->
+<div class="caja2">
+    <h2>Ejercicio 20</h2>
+    <p>Realizar el programa que imprima 5 veces en la pantalla los números
+        comprendidos entre 1 y 20 usando dos bucles.</p>
+    <button onclick="ej20()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida20"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 21 -->
+<div class="caja2">
+    <h2>Ejercicio 21</h2>
+    <p>Determinar si un número introducido por teclado es primo.</p>
+    <input type="number" class="entrada" id="ej21a" value="0">
+    <button onclick="ej21()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida21"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 22 -->
+<div class="caja2">
+    <h2>Ejercicio 22</h2>
+    <p>Realizar el programa que muestre por pantalla la tabla de multiplicar de un número
+        dado. La salida del programa deberá ser de la siguiente forma:</p>
+    <ul>
+        <li>5 * 1 = 5</li>
+        <li>5 * 2 = 10</li>
+        <li>5 * 3 = 15</li>
+        <li>5 * 4 = 20</li>
+        <li>5 * 5 = 25</li>
+        <li>5 * 6 = 30</li>
+        <li>5 * 7 = 35</li>
+        <li>5 * 8 = 40</li>
+        <li>5 * 9 = 45</li>
+        <li>5 * 10 = 50</li>
+    </ul>
+    <input type="number" class="entrada" id="ej22a" value="0">
+    <button onclick="ej22()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida22"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 23 -->
+<div class="caja2">
+    <h2>Ejercicio 23</h2>
+    <p>Escribe un programa que reciba un número por teclado y una frase. El programa
+        deberá mostrar esa frase por pantalla tantas veces como se le indique en el
+        número.</p>
+    <input type="number" class="entrada" id="ej23a" value="0">
+    <input type="text" class="entrada" id="ej23b" value="texto">
+    <button onclick="ej23()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida23"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 24 -->
+<div class="caja2">
+    <h2>Ejercicio 24</h2>
+    <p>Programa que calcule el factorial de un número introducido por teclado, sabiendo
+        que la fórmula del factorial el factorial (n) = n * factorial (n-1).</p>
+    <input type="number" class="entrada" id="ej24a" value="0">
+    <button onclick="ej24()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida24"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 25 -->
+<div class="caja2">
+    <h2>Ejercicio 25</h2>
+    <p>Tomando del teclado el precio por unidad de un determinado producto, se
+        pretende imprimir un listado con los precios para unidades desde 1 a 100. Se
+        deben aplicar una serie de descuentos, a saber: 10% a partir de 15 unidades, 15% a
+        partir de 30 unidades, 20% a partir de 50 unidades.</p>
+    <input type="number" class="entrada" id="ej25a" value="0">Precio
+    <input type="number" class="entrada" id="ej25b" value="0">Cantidad
+    <br>
+    <button onclick="ej25()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida25"></p>
+</div>
+
+
+
+
+<!-- Ejercicio 26 -->
+<div class="caja2">
+    <h2>Ejercicio 26</h2>
+    <p>Programa que pida dos números por teclado y calcule si el segundo es múltiplo del
+        primero.</p>
+    <input type="number" class="entrada" id="ej26a" value="0">
+    <input type="number" class="entrada" id="ej26b" value="0">
+    <button onclick="ej26()" class="entrada-boton">Calcular</button>
+    <hr>
+    <p class="salida" id="salida26"></p>
+</div>
 
     
 </body>

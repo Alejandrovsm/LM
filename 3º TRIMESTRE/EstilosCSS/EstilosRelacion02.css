@@ -1,0 +1,89 @@
+body{
+    background: url(Imagenes/AA12.gif);
+    background-attachment: fixed;
+    font-family: Verdana, sans-serif;
+    color: #355;
+}
+
+
+
+.caja{
+    background: #17c0a456;
+    height: auto;
+}
+
+
+.caja2{
+    background: rgba(240, 255, 255, 0.712);
+    border: 7px solid rgba(31, 216, 93, 0.288);
+    border-radius: 50px;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+label{
+    font-size: 20px;
+    font-style: italic;
+    color: purple;
+}
+
+.entrada{
+
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid rgba(31, 216, 93, 0.993);;
+    margin: 5px;
+    height: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.salida{
+
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid rgba(31, 216, 93, 0.993);;
+    margin: 5px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.entrada-boton{
+    background-color: rgba(31, 216, 93, 0.288);
+    border: 1px solid rgba(31, 216, 93, 0.993);;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.entrada:hover, .entrada-boton:hover{
+    background-color: rgba(182, 216, 31, 0.288);
+    transition: .5s;
+}
+
+hr{
+    background-color: rgba(31, 216, 93, 0.288);
+    height: 2px;
+}
+
+.cyan{
+    color: cyan;
+}
+
+.center{
+    text-align: center;
+}
+
+dt{
+    font-size:larger;
+}
+
+li, dd{
+    margin:6px;
+}
+dl{
+    margin: 25px 0px;
+}
