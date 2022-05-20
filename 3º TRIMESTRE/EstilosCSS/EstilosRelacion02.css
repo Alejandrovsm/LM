@@ -64,11 +64,6 @@ label{
     transition: .5s;
 }
 
-hr{
-    background-color: rgba(19, 208, 189, 0.582  );
-    height: 2px;
-}
-
 .cyan{
     color: cyan;
 }
@@ -92,7 +87,7 @@ h1{
     padding: 0;
     width:100%;
     text-align: center;
-    font-style: italic;
+    font-style:inherit;
     font-size:2em;
     text-transform: uppercase;
     letter-spacing: 5px;
