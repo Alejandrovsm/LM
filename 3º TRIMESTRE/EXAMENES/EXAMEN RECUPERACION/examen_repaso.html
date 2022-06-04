@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ex&aacute;men</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="examen_repaso.js"></script>
+</head>
+<body>
+    <form class="formulario" id="ej01">
+        <div class="titulo">1. NÚMEROS DESBORDADOS</div>
+        <div class="enunciado">
+			<p>
+                Introduzca un número y saldrá la suma de todos sus divisores. Ejemplo: (8) -> 1 + 2 + 4 = 7
+            </p>
+            <p>
+                Crea una función llamada sum_cuad_dig que tendrá como entrada un número
+                entero n y que devolverá como salida la suma de los cuadrados de sus dígitos.
+                Por ejemplo: si n=145 f(n)=12+42+52=1+16+25=42.
+            </p>
+            <p>
+                Un número es desbordado si la suma de sus dígitos al cuadrado es mayor que el
+                propio número. Crea otra función llamada desbordado que tendrá como entrada
+                un número entero n y que devolverá como salida true si es número es
+                desbordado y false en caso contrario.
+            </p>
+            <p>
+                Crea un formulario que admita un número entero y que al pulsar el botón
+                muestre en pantalla la suma de los dígitos al cuadrado e indique si el número es
+                desbordado o no lo es.
+            </p>
+		</div>
+        <div class="input-contenedor">
+            <input class="input" id="e1i1" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e1i1">Número Entero</label>
+        </div>
+		<div class="contenedor">
+			<q onclick="ejercicio01()"><span>CALCULAR SUMA</span></q>
+			<div class="respuesta" id="r1"></div>
+		</div>
+        <div class="contenedor">
+			<q onclick="ejercicio01b()"><span>¿ES DESBORDADO?</span></q>
+			<div class="respuesta" id="r1b"></div>
+		</div>
+    </form>
+
+    <form class="formulario" id="ej02">
+        <div class="titulo">2. FRUTERIA</div>
+        <div class="enunciado">
+			<p>
+                Una frutería pretende vender frutas por internet, venderá Peras a 3€/kilo,
+                Manzanas a 2,5€/kilo, Fresas a 4€/kilo y Sandías a 1€/kilo.
+            </p>
+            <p>
+                A partir de 5kilos todos los productos se abaratan un 10%. Los gastos de envío son fijos y
+                ascienden a 5€.
+            </p>
+            <p>
+                Crea un formulario que permita determinar las solicitudes del cliente indicando
+                la cantidad total a pagar y el desglose de cada producto.
+            </p>
+            <p>
+                Los precios finales deberás mostrarlos escribiendo en el DOM y mostrándolos
+                justo a continuación del botón Calcular del formulario de la frutería.
+            </p>
+		</div>
+        <div class="input-contenedor">
+            <input class="input" id="e2per" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2per">Peras 3€/Kg</label>
+        </div>
+        <div class="input-contenedor">
+            <input class="input" id="e2man" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2man">Manzanas 2,5€/Kg</label>
+        </div>
+        <div class="input-contenedor">
+            <input class="input" id="e2fre" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2fre">Fresas 4€/Kg</label>
+        </div>
+        <div class="input-contenedor">
+            <input class="input" id="e2san" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2san">Sandías 1€/Kg</label>
+        </div>
+
+		<div class="contenedor">
+			<q onclick="ejercicio02()"><span>CALCULA EL TOTAL</span></q>
+			<div class="respuesta" id="r2"></div>
+		</div>
+    </form>
+
+	<form class="formulario" id="ej03">
+        <div class="titulo">3. COLECCION DE DISCOS</div>
+        <div class="enunciado">
+            <p>
+                El ejercicio consiste en realizar un formulario para gestionar tu colección de
+                discos. Para ello tendrás que crear un formulario en el que introduzcas el grupo
+                y el nombre del álbum que quieras registrar. Cuando le des al botón de enviar,
+                escribirá fuera de la caja del formulario la entrada de dicho disco. En cada botón
+                “?” se mostrará un mensaje con el contenido del correspondiente control del
+                formulario.
+            </p>
+        </div>
+
+        <div class="input-contenedor">
+            <input class="input" id="grupo" placeholder=" " type="text">
+            <div class="partearriba partearriba-long"></div>
+            <label class="placeholder" for="grupo">Grupo</label>
+        </div>
+		<span class="tooltip-contenedor" onclick="alert(grupo.value)" onmouseover="bandTip(ttband,grupo)">
+			<q class="questionmark">?</q>
+			<span class="tooltip" id="ttband"></span>
+		</span>
+
+		<div class="input-contenedor">
+            <input class="input" id="alb" placeholder=" " type="text">
+            <div class="partearriba partearriba-long"></div>
+            <label class="placeholder" for="alb">Album</label>
+        </div>
+		<span class="tooltip-contenedor" onclick="alert(alb.value)" onmouseover="bandTip(ttalb,alb)">
+			<q class="questionmark">?</q>
+			<span class="tooltip" id="ttalb"></span>
+		</span>
+
+		<div class="contenedor">
+			<q onclick="enviar()"><span>ENVIAR</span></q>
+			<q id="magiaborras" onclick="cancelar()"><span>CANCELAR</span></q>
+		</div>
+        <div class="formulario" id="colores" style="width:100%;margin-left:-2px">
+            <div class="titulo">GRUPAZOS</div>
+            <ol id="grupazos"></ol>
+    </form>
+
+    </div>
+</html>
