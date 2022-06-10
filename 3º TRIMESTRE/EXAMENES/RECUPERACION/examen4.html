@@ -10,82 +10,55 @@
 </head>
 <body>
     <form class="formulario" id="ej01">
-        <div class="titulo">1. NÚMEROS DESBORDADOS</div>
+        <div class="titulo">1. ENTRADAS</div>
         <div class="enunciado">
 			<p>
-                Introduzca un número y saldrá la suma de todos sus divisores. Ejemplo: (8) -> 1 + 2 + 4 = 7
-            </p>
-            <p>
-                Crea una función llamada sum_cuad_dig que tendrá como entrada un número
-                entero n y que devolverá como salida la suma de los cuadrados de sus dígitos.
-                Por ejemplo: si n=145 f(n)=12+42+52=1+16+25=42.
-            </p>
-            <p>
-                Un número es desbordado si la suma de sus dígitos al cuadrado es mayor que el
-                propio número. Crea otra función llamada desbordado que tendrá como entrada
-                un número entero n y que devolverá como salida true si es número es
-                desbordado y false en caso contrario.
-            </p>
-            <p>
-                Crea un formulario que admita un número entero y que al pulsar el botón
-                muestre en pantalla la suma de los dígitos al cuadrado e indique si el número es
-                desbordado o no lo es.
+                Crea un formulario que calcule el importe de unas entradas de futbol. Para ello, el usuario introducira dos datos: el numero de adultos y el numero de niños que compran su entrada.
+                El precio de la entrada de adultos es de 14,50€ y el de niños 9,50€. El precio total se mostrara con un alert con dos decimales.
             </p>
 		</div>
         <div class="input-contenedor">
             <input class="input" id="e1i1" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e1i1">Número Entero</label>
+            <label class="placeholder" for="e1i1">Entradas adultos</label>
+        </div>
+        <div class="input-contenedor">
+            <input class="input" id="e2fre" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e1i1">Entradas niños</label>
         </div>
 		<div class="contenedor">
-			<q onclick="ejercicio01()"><span>CALCULAR SUMA</span></q>
+			<q onclick="ejercicio01()"><span>CALCULAR</span></q>
 			<div class="respuesta" id="r1"></div>
-		</div>
-        <div class="contenedor">
-			<q onclick="ejercicio01b()"><span>¿ES DESBORDADO?</span></q>
-			<div class="respuesta" id="r1b"></div>
 		</div>
     </form>
 
     <form class="formulario" id="ej02">
-        <div class="titulo">2. FRUTERIA</div>
+        <div class="titulo">2. PEDIDO</div>
         <div class="enunciado">
 			<p>
-                Una frutería pretende vender frutas por internet, venderá Peras a 3€/kilo,
-                Manzanas a 2,5€/kilo, Fresas a 4€/kilo y Sandías a 1€/kilo.
-            </p>
-            <p>
-                A partir de 5kilos todos los productos se abaratan un 10%. Los gastos de envío son fijos y
-                ascienden a 5€.
-            </p>
-            <p>
-                Crea un formulario que permita determinar las solicitudes del cliente indicando
-                la cantidad total a pagar y el desglose de cada producto.
-            </p>
-            <p>
-                Los precios finales deberás mostrarlos escribiendo en el DOM y mostrándolos
-                justo a continuación del botón Calcular del formulario de la frutería.
+                Crea un formulario que calcule el precio total de un pedido de naranjas. El usuario introducira el numero de kilos de naranjas que queremos comprar,
+                el precio por kilo y el tanto por ciento de IVA vigente. <br><br>
+                Dependiendo del volumen de la compra, el almacén nos hace distintos descuentos: <br>
+                - Hasta 20 kg: 10% descuento <br>
+                - Mas de 20 kg: 20% descuento <br>
+                Recuerda que el descuento debe realizarse antes de aplicar el IVA correspondiente. El formulario debe devolver el precio de la compra con dos decimales
             </p>
 		</div>
         <div class="input-contenedor">
             <input class="input" id="e2per" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e2per">Peras 3€/Kg</label>
+            <label class="placeholder" for="e2per">Kilos Naranjas</label>
         </div>
         <div class="input-contenedor">
             <input class="input" id="e2man" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e2man">Manzanas 2,5€/Kg</label>
+            <label class="placeholder" for="e2man">Precio por kilo</label>
         </div>
         <div class="input-contenedor">
             <input class="input" id="e2fre" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e2fre">Fresas 4€/Kg</label>
-        </div>
-        <div class="input-contenedor">
-            <input class="input" id="e2san" placeholder=" " type="number">
-            <div class="partearriba"></div>
-            <label class="placeholder" for="e2san">Sandías 1€/Kg</label>
+            <label class="placeholder" for="e2fre">IVA Vigente</label>
         </div>
 
 		<div class="contenedor">
@@ -94,46 +67,24 @@
 		</div>
     </form>
 
-	<form class="formulario" id="ej03">
-        <div class="titulo">3. COLECCION DE DISCOS</div>
+    <form class="formulario" id="ej03">
+        <div class="titulo">3. COMPRENDIDOS</div>
         <div class="enunciado">
             <p>
-                El ejercicio consiste en realizar un formulario para gestionar tu colección de
-                discos. Para ello tendrás que crear un formulario en el que introduzcas el grupo
-                y el nombre del álbum que quieras registrar. Cuando le des al botón de enviar,
-                escribirá fuera de la caja del formulario la entrada de dicho disco. En cada botón
-                “?” se mostrará un mensaje con el contenido del correspondiente control del
-                formulario.
+                Crea una funcion llamada comprendidos que reciba dos numeros enteros como parametros y devuelva una cadena de texto con todos los numeros comprendidos entre dos, ambos incluidos.
+                Tener en cuenta que puede ocurrir que el primer numero puede ser mayor que el segundo. El formulario se mostrará con un alert el contenido de la cadena recibida desde la funcion.
             </p>
         </div>
 
         <div class="input-contenedor">
-            <input class="input" id="grupo" placeholder=" " type="text">
-            <div class="partearriba partearriba-long"></div>
-            <label class="placeholder" for="grupo">Grupo</label>
+            <input class="input" id="e1i1" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e1i1">Número</label>
         </div>
-		<span class="tooltip-contenedor" onclick="alert(grupo.value)" onmouseover="bandTip(ttband,grupo)">
-			<q class="questionmark">?</q>
-			<span class="tooltip" id="ttband"></span>
-		</span>
-
-		<div class="input-contenedor">
-            <input class="input" id="alb" placeholder=" " type="text">
-            <div class="partearriba partearriba-long"></div>
-            <label class="placeholder" for="alb">Album</label>
-        </div>
-		<span class="tooltip-contenedor" onclick="alert(alb.value)" onmouseover="bandTip(ttalb,alb)">
-			<q class="questionmark">?</q>
-			<span class="tooltip" id="ttalb"></span>
-		</span>
-
 		<div class="contenedor">
-			<q onclick="enviar()"><span>ENVIAR</span></q>
-			<q id="magiaborras" onclick="cancelar()"><span>CANCELAR</span></q>
+			<q onclick="ejercicio01()"><span>CALCULAR</span></q>
+			<div class="respuesta" id="r1"></div>
 		</div>
-        <div class="formulario" id="colores" style="width:100%;margin-left:-2px">
-            <div class="titulo">GRUPAZOS</div>
-            <ol id="grupazos"></ol>
     </form>
-    </div>
+
 </html>
