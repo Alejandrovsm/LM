@@ -19,7 +19,7 @@ body {
 	flex-wrap: wrap;
 }
 
-.contenedor q {
+.contenedor p {
 	position: relative;
 	display: inline-block;
 	padding: 15px 30px;
@@ -34,13 +34,13 @@ body {
 	background-color: rgba(109, 16, 16, 0.326);
 }
 
-.contenedor q:hover {
+.contenedor p:hover {
 	transition-delay: 1.5s;
 	color: #000;
 	
 }
 
-.contenedor q span {
+.contenedor p span {
 	position: relative;
 	z-index: 100;
 }

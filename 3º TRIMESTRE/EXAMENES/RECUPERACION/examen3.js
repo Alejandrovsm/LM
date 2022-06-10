@@ -3,7 +3,7 @@ function ejercicio01() {
     let maletas = e1mal.value * 20;
 	let operacion = billetes + maletas;
 	texto = "Precio total: "
-	alert(texto+operacion.toFixed(2).replace(/0+$/,"")+" €")
+	alert(texto+operacion.toFixed(2).replace(/0+$/,"")+" €") // ASI SE HACE SIN DECIMALES //            // ASI ES COMO LO PIDE EL EJERCICIO alert(texto+operacion.toFixed(2)+" €")
 }
 
 
@@ -30,11 +30,27 @@ function pagar(alumnos) {
 	}
 }
 
-function ejercicio03() {
-    let numero = e3fc.value;
-    var resultado = 1;
-    for (var i = 1; i <= numero; i++) {
-        resultado *= i;
-        document.getElementById('r3').innerHTML = `${resultado}`;
+function factorial(num) {
+	num = BigInt(num)
+    if(num==1n || num==0n) {
+        return 1n;
+    } else if (num<0n) {
+        return -1;
+    } else {
+        return num*factorial(num-1n);
     }
 }
+
+function ejercicio03() {
+    let numero = e3fc.value;
+    let operacion = factorial(numero);
+    r3.innerHTML = operacion;
+}
+
+
+/*
+function ejercicio03() {
+    let numero = e3fc.value;                    /// OTRA FORMA DE HACERLO
+    r3.innerHTML = factorial(numero);
+}
+*/
