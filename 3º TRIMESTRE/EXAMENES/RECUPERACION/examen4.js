@@ -1,15 +1,14 @@
-function ejercicio01(a1, n1){
+function ejercicio01(){
     let a1 = e1ad.value * 14.50;
     let n1 = e1ni.value * 9.50;
     let total = a1 + n1;
-    document.getElementById('r1').innerHTML = `
-    El precio total es de <b>${total}</b>€`;
+    alert("El precio total es de: "+total.toFixed(2).replace(/0+$/,"")+" €")
 }
 
 function ejercicio02() {
-    let pProducto2 = parseInt(document.getElementById('pProducto').value);  //UNIDAD
-    let pBruto = pProducto2 *= parseInt(document.getElementById('pCantidad').value); //CANTIDAD
-    let pIva = parseInt(document.getElementById('tipoIva2').value) / 100; //Iva a aplicar
+    let pProducto2 = parseInt(document.getElementById('pProducto').value);  
+    let pBruto = pProducto2 *= parseInt(document.getElementById('pCantidad').value); 
+    let pIva = parseInt(document.getElementById('tipoIva2').value) / 100; 
     let pDescontado = (descuento *= pBruto);
     let pDtoAplic = pBruto - pDescontado;
     let pIvaAdd = ((pDtoAplic * pIva) + pDtoAplic).toFixed(2);
