@@ -7,16 +7,25 @@ function sumaDivisores(n) {
 	}
 	return total
 }
-function colegas(n1,n2) {
-    if (sumaDivisores(n1) == n2 && sumaDivisores(n2) == n1)  {
-        return "Son besties";
+
+function numerosAmigos(n1,n2) {
+    if ((SumaDivisores(n1) == n2) && (SumaDivisores(n2) == n1))  {
+        return true;
+        
+    }else{
+       return false;
+    }
+}
+function ejercicio01(e1, e2){
+    if(numerosAmigos(e1, e2)==true) {
+        console.log("SON PUTOS COLEGAS")
     }
     else{
-        return "Se puto odian";
+        console.log("NI SE MIRAN")
     }
 }
 
-function ejercicio02(participante){
+function ejercicio02(participantes){
     descuento=1;
     bolas=participantes*100+parseInt(participantes/5)*100;
 
