@@ -18,14 +18,14 @@
             </p>
 		</div>
         <div class="input-contenedor">
-            <input class="input" id="e1i1" placeholder=" " type="number">
+            <input class="input" id="e1ad" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e1i1">Entradas adultos</label>
+            <label class="placeholder" for="e1ad">Entradas adultos</label>
         </div>
         <div class="input-contenedor">
-            <input class="input" id="e2fre" placeholder=" " type="number">
+            <input class="input" id="e1ni" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e1i1">Entradas niños</label>
+            <label class="placeholder" for="e1ni">Entradas niños</label>
         </div>
 		<div class="contenedor">
 			<q onclick="ejercicio01()"><span>CALCULAR</span></q>
@@ -46,19 +46,23 @@
             </p>
 		</div>
         <div class="input-contenedor">
-            <input class="input" id="e2per" placeholder=" " type="number">
+            <input class="input" id="pCantidad" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e2per">Kilos Naranjas</label>
+            <label class="placeholder" for="pCantidad">Kilos Naranjas</label>
         </div>
         <div class="input-contenedor">
-            <input class="input" id="e2man" placeholder=" " type="number">
+            <input class="input" id="pProducto" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e2man">Precio por kilo</label>
+            <label class="placeholder" for="pProducto">Precio por kilo</label>
         </div>
-        <div class="input-contenedor">
-            <input class="input" id="e2fre" placeholder=" " type="number">
-            <div class="partearriba"></div>
-            <label class="placeholder" for="e2fre">IVA Vigente</label>
+		<div class="input-contenedor">
+			<select name="" id="tipoIva2" class="select">
+                <option value="0" disabled selected>IVA</option>
+                <option value="4"> IVA 4%</option>
+                <option value="8"> IVA 8%</option>
+                <option value="12"> IVA 12%</option>
+                <option value="21"> IVA 21%</option>
+			</select>
         </div>
 
 		<div class="contenedor">
@@ -77,13 +81,13 @@
         </div>
 
         <div class="input-contenedor">
-            <input class="input" id="e1i1" placeholder=" " type="number">
+            <input class="input" id="e3per" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e1i1">Número</label>
+            <label class="placeholder" for="e3per">Número</label>
         </div>
 		<div class="contenedor">
 			<q onclick="ejercicio01()"><span>CALCULAR</span></q>
-			<div class="respuesta" id="r1"></div>
+			<div class="respuesta" id="r3"></div>
 		</div>
     </form>
 
