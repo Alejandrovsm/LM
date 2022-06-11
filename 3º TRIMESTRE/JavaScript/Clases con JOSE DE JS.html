@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    <script src="ClaseconJoseJS.js"></script>
+    <title>Clases con Jose</title>
+</head>
+<body>
+
+*/ TIPOS DE DECLARACIONES */
+
+let */ DECLARACION A NIVEL LOCAL Y SOLO FUNCIONA DONDE SE DECLARA (SI LA DECLARAMOS EN UNA FUNCION, PARA USARLA EN OTRA DEBEREMOS USAR UNA VAR) */
+var */ DECLARACION A NIVEL GLOBAL, FUNCIONA EN CUALQUIER SITIO */
+const */VALORES FIJOS QUE JAMAS CAMBIARAN, SON VALORES QUE DAREMOS UNA PRIMERA VEZ, COMO POR EJEMPLO (const PI = 3.14;)(LA VARIABLE SIEMPRE HA DE IR EN MAYUS PARA QUE EL QUE LEA EL CODIGO SEPA QUE ES UN CODIGO), AUNQUE SI SON DATOS, ENTRE CORCHETES, PODREMOS LLEGAR A REASIGNARLOS */ 
+
+
+*/ TIPOS DE VALORES DE JAVASCRIPT */
+
+NaN */ SIGNIFICA QUE NO ES UN NUMERO */
+String / STR */ ES UNA CADENA DE TEXTO */
+integer INT */ ES UN NUMERO ENTERO */ 
+Float FLOAT */ NUMERO DECIMAL */
+Undefined */ ALGO QUE NO ESTA DEFINIDO - ALGO A LO QUE NO HEMOS DECLARADO NINGUN VALOR */
+BOOLEANS */ (true / false) - SOLO EXISTEN ESOS DOS */
+Array */ MATRIZ / ES UN GRUPO DE COSAS */           EJ: var estudiantes = ["Nora", "Gino", "Eduardo"]; | var listadeproductos = [["Camisa", 5.99, "S47"], ["Movil", 300, "S99"], ["Zapatos", 56, "S78"]]
+      */ PARA SELECCIONAR UN ELEMENTO DE UN ARRAY[X] DONDE X ES LA POSICION DESEADA !!!TENER EN CUENTA QUE LA POSICION INICIAL ES 0!!! */
+
+
+*/ FUNCIONES YA DEFINIDAS DE JAVASCRIPT */
+
+parseInt(x) */ CONVIERTE X en un numero entero /*
+parseFloat(x) */ CONVIERTE X en un numero decimal o en punto flotante */
+String(x) */CONVIERTE X en una cadena de texto*/
+Math */ ESTO TIENE FUNCIONES MATEMATICAS    - Math.PI           NUMERO PI
+                                            - Math.sqrt(x)      RAIZ CUADRADA
+                                            - Math.pow(x, y)    EXPONENTE      
+                                            - Math.round(x)     REDONDEA UN NUMERO DECIMAL
+                                            - Math.min(x, y...) SELECCIONA EL NUMERO MAS PEQUEÑO
+                                            - Math.max(x, y...) SELECCIONA EL NUMERO MAYOR         */
+
+*/ VALORES BOOLEANOS */
+
+console.log(true);              OPCION 1
+console.log(false);             OPCION 2
+
+*/ BUCLES Y PUERTAS */
+
+    DONDE COMIENZA      HASTA CUANDO DURA   LO QUE OCURRE EN CADA PASO DEL BUCLE
+for(let contador = 0 ; contador<=X.lenght ; contador++){        
+}                 
+
+for(let contador = 0 ; contador<=X.lenght ; contador+=2){         
+}                                                       */ CON +=2 INCREMENTA 2 CADA VEZ QUE OCURRA EL BUCLE */
+
+while(1>0){
+    console.log("Voy a reventarte el ordenador!")
+}
+           
+
+/* OPERACIONES ARITMETICAS Y LOGICAS */
+
+- LOGICAS:
+                =               SIRVE PARA UNA DECLARACION O ALTERACION
+                ==              SIRVE PARA UNA COMPARACION LAXA
+                ===             SIRVE PARA UNA COMPARACION EXACTA
+                &&              (AND) COMPRUEBA SI SE CUMPLEN AMBAS CONDICIONES (LA BALLENA ES GRANDE Y ES AZUL)
+                ||              (OR)  COMPRUEBA SI SE CUMPLE UNA CONDICION U OTRA (EL PERRO ES GUAPO O FEO)
+                <               INDICA QUE ES MENOR QUE ALGO
+                >               INDICA QUE ES MAYOR QUE ALGO
+                <=              INDICA QUE ES MENOR O IGUAL QUE ALGO
+                >=              INDICA QUE ES MAYOR O IGUAL QUE ALGO
+                !=              NOS DICE SI NO ES IGUAL AL OTRO DATO 
+                !==             NOS DICE SI NO ES IGUAL AL OTRO DATO PERO MAS ESTRICTO
+                !               (NOT) ES LO CONTRARIO (OPERACION BOOLEANA console.log(!true) SERIA false MIENTRAS QUE console.log(!false) SERIA true) (EJEMPLOS EN LA LINEA 344)               
+- ARITMETICAS:
+                +               SUMA
+                -               RESTA
+                *               MULTIPLICACION
+                /               DIVISION
+                %               RESTO DE LA DIVISION
+                ++              INCREMENTA EL VALOR DE UNA VARIABLE EN 1
+                --              REDUCE EL VALOR DE LA VARIABLE EN 1
+                +=              INCREMENTA EL VALOR DE UNA VARIABLE EN LO QUE PONGAMOS (EJ: Pagos += 5 (INCREMENTA EL VALOR EN 5))
+                -=              REDUCE EL VALOR DE UNA VARIABLE EN LO QUE PONGAMOS
+                *=              MULTIPLICA EL VALOR DE UNA VARIABLE EN LO QUE PONGAMOS
+                /=              DIVIDE EL VALOR DE UNA VARIABLE EN LO QUE PONGAMOS
+
+*/ SI CREAMOS UNA VARIABLE QUE CONTIENE UNA CADENA DE TEXTO Y DENTRO DE ESA CADENA DE TEXTO TENEMOS UNA PALABRA QUE VA ENTRE COMILLAS,
+DEBEREMOS HACER LO SIGUIENTE, ES LO DENOMINADO SECUENCIA DE "ESCAPE" */
+
+var CadenaTexto = "Tengo un perro de color \"rojo\""        (EL USO DE LA BARRA INVERTIDA \ NOS PERMITIRA INCLUIRLA)
+
+*/ OTRAS SECUENCIAS DE ESCAPE /*
+
+                \'              COMILLA SIMPLE
+                \"              COMILLA DOBLE
+                \\              BARRA INVERTIDA (TE AÑADE UNA \ AL TEXTO)
+                \n              LINEA NUEVA (HACE UN SALTO DE LINEA ABAJO)
+                \r              RETORNO DE CARRO
+                \t              TABULACION
+                \b              RETROCESO
+                \f              SALTO DE PAGINA
+                ...
+                */
+
+*/ CONCATENAR CADENAS DE CARACTERES */
+
+var NombreCompleto = "Alejandro" + " " + "Vázquez";
+
+DE ESTA FORMA AL PONER EL console.log(NombreCompleto) NOS PONDRA Alejandro Vázquez (SI NO PUSIERAMOS EL ESPACIO DEL MEDIO SE JUNTARIA TODO)
+
+
+*/ CONSTRUIR CADENAS CON VARIABLES */ 
+
+var verbo = "programar";
+
+var mensaje = "Estoy aprendiendo a " + verbo + " con Youtube";
+
+DE ESTA FORMA AL PONER EL console.log(mensaje) NOS SALDRA Estoy aprendiendo a programar con Youtube YA QUE NOS MUESTRA LAS DOS VARIABLES
+
+
+*/ CONCATENAR CADENAS DE TEXTO CON VARIABLES */
+
+var MensajeCompleto = "Estoy aprendiendo a programar ";
+var ParteFinal = "con Youtube";
+
+MensajeCompleto += ParteFinal;
+
+AL PONER EL console.log(MensajeCompleto) NOS SALDRA Estoy aprendiendo a programar con Youtube
+
+
+*/ LONGITUD DE NUESTRA CADENA DE TEXTO Y USO DE CORCHETES "[]" */ 
+
+var longitud = "Pato";
+
+console.log(longitud.length);
+
+ESTA EN VEZ DE DECIRNOS Pato NOS DIRA 4, YA QUE CUENTA EL NUMERO DE LETRAS QUE ESTAN DENTRO DE LA CADENA DE TEXTO, INCLUYE ADEMAS ESPACIOS, SIGNOS, ETC...
+
+HAY UNA FORMA LA CUAL NOS MUESTRA SI QUEREMOS UNA LETRA EN ESPECIFICO DE NUESTRA CADENA DE TEXTO, AUNQUE TENEMOS QUE TENER EN CUENTA QUE EMPEZAMOS POR EL NUMERO 0 
+!!!!(IMPORTANTE NO ES COMO EL LENGTH EL CUAL NOS MUESTREA EL NUMERO DE LETRAS Y NO EMPIEZA POR 0 SINO POR 1)!!!! POR EJEMPLO:
+
+var longitud = "Pato"
+
+console.log(longitud[0]);       LO QUE NOS SALDRA AQUI SERA UNA "P"
+
+console.log(longitud[4]);       NOS DARA UN "UNDEFINED" YA QUE NO HAY NINGUNA LETRA EN SU POSICION
+
+console.log(longitud[3]);       LO QUE NOS SALDRA AQUI SERA UNA O
+
+OTRA FORMA MENOS HABITUAL PARA MOSTRAR LA ULTIMA LETRA SI NUESTRA CADENA DE TEXTO FUESE MUY LARGA SERIA ASI:
+
+var Cadena = "Lleva la tarara un vestido blanco lleno de cascabeles"
+
+PARA PODER SABER LA ULTIMA LETRA HARIAMOS ASI...
+
+console.log(Cadena[Cadena.length - 1]);         ESTO NOS MOSTRARIA LA LETRA S
+
+TAMBIEN PODREMOS REALIZARLO SI UTILIZAMOS OTRA VARIABLE COMO POR EJEMPLO:
+
+var Cadena = "Lleva la tarara un vestido blanco lleno de cascabeles"
+var n = 5
+
+console.log(Cadena[Cadena.length - n]);         ESTO NOS MOSTRARIA LA LETRA B
+
+
+*/ PALABRAS EN BLANCO */
+
+var sustantivo = "perro";
+var adjetivo = "negro";
+var verbo = "corrió";
+var adverbio = "rapidamente";
+
+TENEMOS ESTAS 4 VARIABLES Y QUEREMOS FORMAR LA FRASE "EL PERRO NEGRO CORRIO RAPIDAMENTE A LA TIENDA"
+COMO PODEMOS OBSERVAR HAY PALABRAS COMO "EL" O "A LA TIENDA" NO ESTAN DENTRO DE NUESTRAS VARIABLES
+
+PARA FORMAR LA FRASE DEBEREMOS HACER LO SIGUIENTE:
+
+var frase = "El" + sustantivo + " " + adjetivo + " " + verbo + " " + adverbio + " a la tienda"
+
+AL PONER EL console.log(frase); NOS SALDRA LA FRASE CORRECTAMENTE
+
+*/ USO DE LOS ARRAY */
+
+var numeros = [10, 20, 30];
+
+Numeros: [10, 20, 30]
+Indices:   0   1   2
+
+SI USARAMOS EL console.log(numeros[0]) NOS SALDRA 10, console.log(numeros[1]) NOS SALDRA 20 Y console.log(numeros[2]) NOS SALDRA 30
+SI QUEREMOS SACAR UNA SUMA TOTAL PODREMOS DECLARAR UNA VARIABLE
+
+var suma = numeros[0] + numeros[1] + numeros[2];
+AHORA TRAS PONER EL console.log(suma) LO QUE NOS SALDRA ES 60
+
+SI QUISIERAMOS MODIFICAR UN ELEMENTO ERRONEO DE DENTRO DE NUESTRO CONJUNTO DE COSAS DEBERIAMOS HACER LO SIGUIENTE
+
+var numeros = [10, 20, 30];
+
+numeros[0] = 40;
+
+ESTO NOS MODIFICARA EL 10 POR UN 40.
+
+COMO MOSTRAR ALGO EN ESPECIFICO DENTRO DE UNOS INDICES INTERNOS
+
+var listadeproductos = [["Camisa", 5.99, "S47"], ["Movil", 300, "S99"], ["Zapatos", 56, "S78"]]
+
+listadeproductos:       [["Camisa", 5.99, "S47"], ["Movil", 300, "S99"], ["Zapatos", 56, "S78"]]
+Indices:                            0                       1                       2
+Indices internos:           0       1       2       0       1       2       0       1       2
+
+SI QUISIERAMOS MOSTRAR EL CODIGO DE PRODUCTO "S99" DEBEREMOS HACER LO SIGUIENTE...
+
+console.log(listadeproductos[1][2])         EL PRIMERO CORCHETE [1] NOS INDICARA EL INDICE Y EL SEGUNDO [2] NOS INDICARA QUE INDICE INTERNO ES EL QUE BUSCAMOS.
+
+UN TIPO DE ARREGLOS SERA CON .push
+
+var estaciones = ["Invierno", "Primavera", "Otoño"];
+
+COMO NOS FALTA VERANO HAREMOS LO SIGUIENTE...
+
+estaciones.push("Verano");          AHORA AL PONER EL console.log(estaciones) NOS SALDRA TODA LA CADENA CON LAS DISTINTAS ESTACIONES Y CON VERANO INCLUIDA
+
+OTRO TIPO DE ARREGLO SERA EL .pop ESTA NOS BORRARA LA ULTIMA AÑADIDA
+
+var estaciones = ["Invierno", "Primavera", "Otoño", "Verano"];
+var estacion = estaciones.pop();                                      ESTO NOS MOSTRARA A VERANO YA QUE ES LA ULTIMA ESTACION AÑADIDA
+
+console.log(estaciones);                                              NOS SALDRA ["Invierno", "Primavera", "Otoño"]
+console.log(estacion);                                                NOS SALDRA Verano
+
+OTRO TIPO DE ARREGLO SERA CON .shift YA QUE NOS SERVIRA PARA ELIMINAR EL PRIMER REGISTRO
+
+var estaciones = ["Invierno", "Primavera", "Otoño", "Verano"];
+estaciones.shift();
+
+console.log(estaciones);                                              NOS SALDRA ["Primavera", "Otoño", "Verano"];
+
+EL CASO CONTRARIO PARA AÑADIR UN ELEMENTO AL PRINCIPIO DEL INDICE
+
+var estaciones = ["Primavera", "Otoño", "Verano"];
+estaciones.unshift("Invierno");                                       NOS AÑADIRA INVIERNO AL PRINCIPIO
+
+console.log(estaciones);                                              NOS MOSTRARA ["Invierno", "Primavera", "Otoño", "Verano"]
+
+*/ PARA QUE HABLE LA CONSOLA */
+
+var listadecompra = [["Cereales", 3], ["Leche", 2], ["Galletas", 4], ["Pan", 5]];
+
+                                (SELECCIONA 3)                         (SELECCIONA CEREALES)
+console.log("Voy a comprar " + listadecompra[0][1]) + " unidades de " + listadecompra[0][0] + ".");
+
+ESTO HARA QUE LA CONSOLA NOS DIGA Voy a comrpar 3 unidades de Cereales.
+
+*/ CREACION DE FUNCIONES */
+
+function mensaje() {
+    console.log("Hola, chavales!");
+};
+
+AHORA SI PUSIERAMOS mensaje(); NOS SALDRIA Hola, chavales! (SI PUSIERAMOS 5 VECES mensaje(); ESTE MENSAJE SE NOS REPETIRIA DURANTE 5 VECES)
+
+---- FUNCION DE SUMAR ----
+
+function sumar(x, y){
+    var suma = x + y;
+    console.log("El resultado de " + a + " + " + b + " es: " + suma);
+};
+
+AHORA AL PONER LA FUNCION, ASIGNAMOS VALORES A LA FUNCION POR EJEMPLO sumar(10, 50); EN LA CONSOLA NOS SALDRA: EL RESULTADO DE 10 + 50 ES: 60
+
+---- CONCATENAR CADENAS ----
+
+function concatenarcadenas(cadena1, cadena2, cadena3){
+    console.log(cadena1 + " " + cadena2 + " " + cadena3);
+};
+
+concatenarcadenas("Estoy", "aprendiendo", "a programar")        ESTO NOS PONDRA LA FUNCION DE ENCIMA CON TODO LO PUESTO EN LA CONSOLA ANTERIORMENTE.
+
+!!!! IMPORTANTE : SI DECLARAMOS UNA VARIABLE DENTRO DE UNA FUNCION SOLO EXISTIRA EN AMBITO LOCAL, ES DECIR, QUE SOLO EXISTIRA SI LLAMAMOS A LA FUNCION, 
+PERO SI LLAMAMOS A UNA SUB VARIABLE CON UN console.log() NOS DIRA QUE ESTA NO EXISTE, MIENTRAS QUE SI LO HICIERAMOS FUERA DE FUNCION NO NOS DARIA PROBLEMA YA QUE SERIA DE AMBITO GLOBAL !!!!
+
+!!!! PODREMOS USAR UNA VARIABLE CON UN MISMO NOMBRE SIEMPRE Y CUANDO UNA LA USEMOS DENTRO DE LA FUNCION Y OTRA FUERA DE ELLA COMO POR EJEMPLO... !!!!
+
+var miNombre = "Alejandro"
+
+function mostrarMinombre(){
+    var miNombre = "Alex";
+    console.log(MiNombre);
+}
+
+SI PONEMOS mostrarMinombre(); NOS SALDRA Alex MIENTRAS QUE SI USAMOS console.log(miNombre) NOS SALDRA Alejandro
+
+---- PARA QUE NOS DEVUELVA UN VALOR ----
+
+function sumar(x, y){
+    return x + y;
+}
+
+console.log(sumar(5, 3));           ESTO NOS DEVOLVERA 8, MIENTRAS QUE SI SOLO PUSIERAMOS sumar(5, 3) ESTO NO NOS DIRIA NADA EN LA CONSOLA YA QUE NO ESTA PUESTO DENTRO DE LA FUNCION
+
+
+
+---------------------------------------------------------- PREGUNTAS EN MINUTO 2:43:30 ----------------------------------------------------------------------
+
+---- CON NUMEROS ----
+
+function sumar(a, b){
+    return a + b;
+}
+
+var resultado = sumar(4, 2);
+console.log(resultado);                     NOS DIRA 6
+
+
+---- CON LETRAS ----
+
+function crearCadenaConMeta(LenguajeDeProgramacion){
+    return "Mi meta es aprender" + LenguajeDeProgramacion;
+}
+
+var meta = crearCadenaConMeta("JavaScript");
+console.log(meta);                          NOS DIRA LA CONSOLA Mi meta es aprender JavaScript
+
+---- CONCATENACION EN UNA FUNCION ----
+
+function ProximoEnLaFila (arreglo, elemento){
+    arreglo.push(elemento);         // AGREGA AL FINAL DEL REGISTRO
+    return arreglo.shift();         // ELIMINA EL PRIMER REGISTRO
+}
+
+var MiArreglo = [1, 2, 3, 4, 5];
+
+console.log("Antes: " + JSON.stringify(MiArreglo));         // NOS DIRA Antes: [1, 2, 3, 4, 5]
+
+console.log(ProximoEnLaFila(MiArreglo, 6));                 // AÑADIRA EL 6 Y SUPRIMIRA EL 1
+
+console.log("Despues: " + JSON.stringify(MiArreglo));       // NOS DIRA Despues: [2, 3, 4, 5, 6]
+
+*/ EJEMPLOS DEL NOT */
+
+var a = 8;
+
+console.log(!(a > 5));          NOS DIRA QUE FALSE YA QUE 8 ES MAYOR QUE 5 POR LO QUE SERIA VERDADERO PERO AL TENER EL ! NOS PIDE LO CONTRARIO, ENTONCES FALSE
+console.log(!(a < 5));          NOS DIRA QUE TRUE YA QUE 8 NO ES MENOR QUE 5 POR LO QUE SERIA FALSO PERO AL TENER EL ! NOS PIDE LO CONTRARIO, ENTONCES TRUE
+
+
+*/ SENTENCIAS CONDICIONALES */
+
+----!!!! USO DEL IF !!!!----
+
+var x = 5
+
+if ((x > 2) && (x < 10)) {
+    console.log("La condicion es verdadera.");
+}
+
+SI LO HICIERAMOS CON UNA CADENA DE TEXTO
+
+var estacion = "Invierno";
+
+if (estacion == "Invierno"){
+    console.log("Si!, Adoro el invierno");
+}
+
+console.log("Despues del condicional...");
+
+AL PODER OBSERVAR, ESTA CONDICION ES CORRECTA ENTONCES AL EJECUTARLO EN LA CONSOLA NOS SALDRIA EL SIGUIENTE MENSAJE:
+Si!, Adoro el invierno
+Despues del condicional...
+
+MIENTRAS QUE SI FUERA DISTINTO Y OCURRIRIA ESTO
+
+var estacion = "Verano";
+
+if (estacion == "Invierno"){
+    console.log("Si!, Adoro el invierno");
+}
+
+console.log("Despues del condicional...");
+
+COMO PODEMOS OBSERVAR ESTA CONDICION ES FALSA POR LO QUE LO UNICO QUE NOS SALDRIA EN LA CONSOLA SERIA:
+Despues del condicional...
+ESTO LO VEREMOS MAS ADELANTE CON EL USO DE LA CONDICION ELSE
+
+----!!!! USO DEL ELSE !!!!----
+
+---- NUMEROS ----
+
+var x = 5
+
+if (x > 2) {
+    console.log("La condicion es verdadera.");
+}
+else{
+    console.log("La condicion es falsa")
+}
+
+---- CADENA DE TEXTO ----
+
+var estacion = "Invierno";
+
+if (estacion == "Verano"){
+    console.log("Ya empieza el verano y podemos ir a la playa");
+}
+else{
+    console.log("Estoy deseando de que llegue el verano para poder ir a la playa")
+}
+
+ESTO NOS INDICARA QUE SI LA VARIABLE ES Verano O OTRA ESTACION, NOS SALDRA UN MENSAJE U OTRO DEPENDIENDO DE LA VARIABLE
+
+----!!!! USO DEL ELSE IF !!!!----
+
+function clasificarValor(Valor){
+    if (valor % 2 == 0){
+        console.log("Es divisible entre 2.");
+    }
+    else if (valor % 3 == 0)  {
+        console.log("Es divisible entre 3.")
+    }
+    else{
+        console.log("No es divisible entre las opciones")
+    }
+}
+
+clasificarValor(2);                 ESTE MENSAJE SE MOSTRARA EN EL IF YA QUE ES UN NUMERO DIVISIBLE ENTRE 2
+clasificarValor(15);                ESTE MENSAJE SE MOSTRARA EN EL ELSE IF YA QUE ES UN NUMERO DIVISIBLE ENTRE 3
+clasificarValor(7);                 ESTE MENSAJE SE MOSTRARA EN EL ELSE YA QUE NO ES DIVISIBLE NI ENTRE 2 NI 3
+
+!!!! DEBEMOS DE TENER EN CUENTA QUE ESTO VA POR JERARQUIA SI USA CONDICION NO SE DA, SE TENDRA EN CUENTA LA DE ABAJO, SI NO, LA SIGUIENTE Y ASI SUCESIVAMENTE !!!!
+
+function clasificarValor(Valor){
+    if (valor < 5){
+        console.log("Menor que 5.");
+    }
+    else if (valor < 10)  {
+        console.log("Menor que 10.")
+    }
+    else {
+        console.log("Mayor o igual que 10")
+    }
+}
+
+clasificarValor(2);                ESTE MENSAJE SE MOSTRARA EN EL IF YA QUE ES UN NUMERO MENOR QUE 5
+clasificarValor(7);                ESTE MENSAJE SE MOSTRARA EN EL ELSE IF YA QUE ES UN NUMERO MENOR QUE 10
+clasificarValor(15);               ESTE MENSAJE SE MOSTRARA EN EL ELSE YA QUE ES UN NUMERO MAYOR QUE 10
+
+
+*/ ENCADENAR SENTENCIAS "IF...ELSE" */
+
+function interpretarIMC(indiceDeMasaCorporal){
+    if (indiceDeMasaCorporal < 18.5){
+        console.log("Bajo Peso");
+    }
+    else if (indiceDeMasaCorporal <= 24.9){
+        console.log("Normal");
+    }
+    else if (indiceDeMasaCorporal <= 29.9){
+        console.log("Sobrepeso");
+    }
+    else {
+        console.log("Obeso");
+    }
+}
+
+interpretarIMC(17.8);       ESTE MENSAJE SE MOSTRARA EN EL IF YA QUE ES MENOR QUE 18.5
+interpretarIMC(24.1);       ESTE MENSAJE SE MOSTRARA EN EL ELSE IF YA QUE ES MENOR O IGUAL QUE 24.9
+interpretarIMC(28.5);       ESTE MENSAJE SE MOSTRARA EN EL ELSE IF YA QUE ES MENOR O IGUAL QUE 29.9
+interpretarIMC(32);         ESTE MENSAJE SE MOSTRARA EN EL ELSE YA QUE ES SUPERIOR QUE 29.9
+
+
+*/ FUNCIONES SWITCH */
+
+SIRVE PARA DARNOS DIFERENTES TIPOS DE RESPUESTAS...
+
+function clasificarValor(valor) {
+    var respuesta;
+    switch(valor) {
+        case 1:
+            respuesta = "alpha";
+            break;
+        case 2:
+            respuesta = "beta";
+            break;
+        case 3:
+            respuesta = "gamma";
+            break;
+        case 4:
+            respuesta = "delta";
+            break;
+    }
+    return respuesta;
+}
+
+console.log(clasificarValor(x));
+
+----- FUNCIONES SWITCH CON DEFAULT-PREDETERMINADO -----
+
+function clasificarIdioma(valor) {
+    var idioma;
+    switch(valor) {
+        case 1:
+            idioma = "Español";
+            break;
+        case 2:
+            idioma = "Frances";
+            break;
+        case 3:
+            idioma = "Italiano";
+            break;
+        default:
+            idioma = "Ingles";
+            break;
+    }
+    return idioma;
+}
+
+console.log(clasificarIdioma(x));
+
+SI POR LO QUE SEA SE DIESE OTRO VALOR QUE NO FUESE NI 1, 2 O 3 NOS SALDRIA SIEMPRE Ingles
+
+------ FUNCIONES SWITCH CON MULTIPLES OPCIONES EN UN MISMO CASO -------
+
+function clasificarVolumen(valor) {
+    var volumen;
+    switch(valor) {
+        case 1:
+            volumen = "bajo";
+            break;
+        case 2:
+        case 3:
+            volumen = "intermedio";
+            break;
+        case 4:
+        case 5:
+        case 6:
+            volumen = "alto";
+            break;
+    }
+    return volumen;
+}
+
+console.log(clasificarVolumen(x));
+
+ESTO NOS INDICARA QUE CUANDO EL VOLUMEN SEA 2 O 3, EL VALOR QUE NOS DIRA LA CONSOLA SERA INTERMEDIO O SI USAMOS EL 4,5 O 6 ESTE SERA ALTO.
+
+!!!!!!!!!!!!!!!!!!!!! EL USO DE LAS CONDICIONALES DE IF, ELSE, ELSE IF PODRIAN SER SUSTITUIDAS POR EL USO DE SWITCH !!!!!!!!!!!!!!!!!!!!!!!
+
+
+*/ RETORNAR VALORES BOOLEANOS */
+
+function esMenorQue(a, b){
+    if (a < b){
+        return true;
+    }                                       ESTO SERIA UNA FORMA MAS COMPLEJA, PERO PODEMOS SIMPLIFICARLA CON LA SIGUIENTE FORMA
+    else{
+        return false;
+    }
+}
+
+function esMenorQue(a, b){
+    return a < b;
+}
+
+Y AL USAR EL console.log(esMenorQue(3,6)) NOS DIRA INSTANTANEAMENTE SI ES TRUE O FALSE (EN ESTE CASO ES TRUE).
+
+
+*/ CREAR OBJETOS */
+
+AQUI DENTRO DE CREAR UNA VARIABLE LE IREMOS DANDO PROPIEDADES COMO SI FUERA UNA FUNCION PERO SE USA ESTA FORMA DE CODIGO, CON COMAS, DOS PUNTOS, ETC
+
+var MiPerro = {
+    "nombre": "Maya",
+    "edad": 13,
+    "peso": 17,
+    "raza": "Golden retriever"
+};
+
+Y PARA PODER ACCEDER A ESTAS PROPIEDADES LO HAREMOS TAL QUE ASI
+
+console.log(MiPerro.nombre);
+console.log(MiPerro["nombre"]);         // ESTO ES OTRA ALTERNATIVA
+
+
+ESTO TAMBIEN SE PUEDE UTILIZAR EN FUNCIONES, COMO POR EJEMPLO... 
+
+var resultados = {
+    1: "Alex",
+    2: "Manolo",
+    3: "Alvaro",
+    4: "Luz"
+};
+
+var posicion = 1;
+
+console.log(resultados[posicion]);
+
+
+--------- ACTUALIZAR PROPIEDADES -----------
+
+var mochila = {
+    "color": "rojo",
+    "tamaño": "grande",
+    "contenido": ["botella de agua", "cuaderno"]
+};
+
+console.log(mochila.color); ESTO NOS DIRA QUE LA MOCHILA ES DE COLOR ROJO PERO SI QUEREMOS ACTUALIZAR DEBEREMOS HACER ESTO
+mochila.color = "azul"
+console.log(mochila.color) ESTO NOS DEVOLVERA EL VALOR DE AZUL
+
+COMO PODEMOS OBSERVAR DENTRO DE "contenido" USAMOS [] YA QUE CONTIENE MAS DE UNA COSA, POR LO TANTO PARA BUSCAR Y ACTUALIZAR DEBEREMOS HACER LO SIGUIENTE
+
+console.log(mochila.contenido);  ------ ESTO NOS MOSTRARA EL CONTENIDO DE LA MOCHILA
+mochila.contenido.push("lapiz"); -------- ESTO NOS AÑADIRA UN LAPIZ AL FINAL DE TODO
+console.log(mochila.contenido); ------- NOS MOSTRARA EL CONTENIDO CON LAPIZ AÑADIDO
+
+SI QUISIERAMOS QUITARLO TODO SIMPLEMENTE DEBEREMOS HACER mochila.contenido = [];
+
+PARA AÑADIRLE CONTENIDO A TODO ESTO TENEMOS VARIABLAS FORMAS DE HACERLO, COMO POR EJEMPLO
+
+var curso = {
+    "titulo" = "Aprender JavaScript",
+    "idioma" = "Español",
+    "duracion" = "9 horas"
+};
+
+AHORA SI QUISIERAMOS AÑADIR EL NUMERO DE VISITAR DEL CURSO PODRIAMOS HACERLO TAL QUE ASI
+
+curso.visitas = 34000;
+curso["visitas"] = 34000;        FORMA ALTERNATIVA
+
+console.log(curso.visitas);             NOS DARIA EL VALOR DE 34000
+
+SI POR ALGUN CASUAL QUISIERAMOS BORRAR UNA PROPIEDAD LO HARIAMOS DE LA SIGUIENTE FORMA
+
+delete curso.duracion;              NOS BORRARIA LA PROPIEDAD DE duracion
+console.log(curso.duracion)         NOS SALDRIA COMO UNDEFINED
+
+
+ADEMAS PODEMOS SIMPLIFICAR TAMBIEN EL SWITCH USANDO PROPIEDADES COMO PODEMOS VER EN EL SIGUIENTE EJEMPLO.
+
+function buscarElementoQuimico(simbolo){
+    var elementoQuimico = "";
+
+    switch(simbolo) {
+        case "Al":
+            elementoQuimico = "Aluminio";
+            break;
+        case "S":
+            elementoQuimico = "Azufre";
+            break;
+        case "Cl":
+            elementoQuimico = "Cloro";
+            break;
+        case "He":
+            elementoQuimico = "Helio";
+            break;
+        case "B":
+            elementoQuimico = "Boro";
+            break;
+        case "Li":
+            elementoQuimico = "Litio";
+            break;
+    }
+    return elementoQuimico;
+}
+
+ESTO SERIA EL EJEMPLO DEL USO DEL SWITCH Y A CONTINUACION COMO PODRIAMOS RESUMIRLO.
+
+function buscarElementoQuimico(simbolo){
+    var simbolosQuimicos = {
+        "Al":"Aluminio",
+        "S":"Azufre",
+        "Cl":"Cloro",
+        "He":"Helio",
+        "B":"Boro",
+        "Li":"Litio"
+    };
+    return simbolosQuimicos[simbolo]
+}
+
+console.log(buscarElementoQuimico("Al")); Y NOS SALDRA Aluminio
+
+--------- VERIFICAR LAS PROPIEDADES ----------
+
+var miCuaderno = {
+    "color": "verde",
+    "categoria": 3,
+    "precio": 4.56
+};
+
+console.log(miCuaderno.hasOwnProperty("color"));  NOS DARA EL VALOR TRUE YA QUE EXISTE LA PROPIEDAD
+console.log(miCuaderno.hasOwnProperty("origen")); NOS DARA EL VALOR FALSE YA QUE NO EXISTE LA PROPIEDAD
+
+PODEMOS COMPLICARLO CON UNA FUNCION DE ESTA FORMA
+
+function verificarPropiedad(obj, propiedad){
+    if(obj.hasOwnProperty(propiedad)){
+        return "Propiedad: " + obj[propiedad]
+    }
+    else{
+        return "El objeto no tiene esta propiedad"
+    }
+}
+
+var miCuaderno = {
+    "color": "verde",
+    "categoria": 3,
+    "precio": 4.56
+};
+
+console.log(verificarPropiedad.hasOwnProperty(miCuaderno, "color"));        ESTO NOS DIRA Propiedad: verde
+console.log(verificarPropiedad.hasOwnProperty(miCuaderno, "origen"));       ESTO NOS DIRA El objeto no tiene esta propiedad
+
+
+-------- PROPIEDADES COMPLEJAS / OBJETOS COMPLEJOS ---------
+
+var ordenesDePizza = [
+    {
+        "tipo":"margarita",
+        "tamaño":"individual",
+        "precio": 3.99,
+        "toppings": [
+            "extra queso",
+            "champiñones",
+            "piña"
+        ],
+        "paraLlevar": true
+    },
+    {
+        "tipo":"cuatro quesos",
+        "tamaño":"familiar",
+        "precio": 5.99,
+        "toppings":[
+            "extra queso",
+            "pimienton"
+        ],
+        "paraLlevar": false
+    },
+];
+
+console.log(ordenesDePizza[0]); NOS MOSTRARA TODOS LOS DATOS DE LA PRIMERA PIZZA
+
+SI QUISIERAMOS ALGO MAS ESPECIFICO PODREMOS HACER LO SIGUIENTE console.log(ordenesDePizza[0].toppings); o console.log(ordenesDePizza[0]["precio"]);
+
+
+----------- OBJETOS ANIDADOS -------------
+
+var miReceta = {
+    "descripcion": "mi postre favorito",
+    "coste": 12,
+    "ingredientes":{
+        "masa":{
+            "harina":"100 grs",
+            "sal":"1 cucharita",
+            "agua":"1 taza"
+        },
+        "cobertura":{
+            "azucar":"120 grs",
+            "chocolate":"4 cucharadas",
+            "mantequilla":"200 grs"
+        }
+    }
+};
+
+console.log(miReceta.descripcion);                      NOS MOSTRARA mi postre favorito
+console.log(miReceta.ingredientes.masa.harina)          NOS MOSTRARA 100 grs
+
+------------ ARREGLOS ANIDADOS --------------
+
+var misPlantas = [
+    {
+        tipo: "flores",
+        lista: [
+            "rosas",
+            "tulipanes",
+            "dientes de leon"
+        ]
+    },
+    {
+        tipo: "arboles",
+        lista: [
+            "abeto",
+            "pino",
+            "abedul"
+        ]
+    }
+];
+
+var primeraFlor = misPlantas[0].lista[0];
+console.log(primeraFlor)
+
+*/ USO DEL WHILE */
+
+var MiArreglo = [];
+var i=0;
+
+while(i < 10){
+    MiArreglo.push(i);
+    i++;
+}
+
+console.log(MiArreglo);          
+
+ESTO HARA QUE NOS MUESTRE EN PANTALLA, COMO VA AUMENTANDO DESDE 0 HASTA 9 TAL QUE ASI [0,1,2,3,4,5,6,7,8,9]
+
+
+OTRO EJEMPLO:
+
+var numeros = [2,3,4,5,6,7,8,9,34];
+
+while (numero.length > 4){
+    numeros.pop();
+}
+
+console.log(numeros);       ESTO COMO NOS DICE EL CODIGO CUANDO EL NUMERO DE DATOS SEA MAYOR DE 4, SE ENCARGARA DE BORRAR EL RESTO DE NUMEROS POR LO CUAL
+                            SOLO NOS SALDRA LO SIGUIENTE [2,3,4,5] 
+
+
+*/ CICLO FOR */
+
+--------- CICLO FOR NUMEROS PARES -----------
+
+var MiArreglo = [];
+
+for (var i=0; i < 10; i +=2){
+    Miarreglo.push(i);    
+}
+
+console.log(MiArreglo);     ESTO NOS MOSTRARA 5 VECES LOS NUMEROS QUE IRAN EN AUMENTO HASTA QUE SEAN MENOR DE 10 POR LO TANTO QUEDARIA DE LA SIGUIENTE FORMA
+                            [0,2,4,6,8] YA QUE COMO PODEMOS OBSERVAR ESTO NO LLEGA AL 10 Y SE ESTARIAN CUMPLIENDO TODAS LAS CONDICIONES Y ADEMAS OBSERVARIAMOS TODOS LOS NUMEROS PARES.
+
+
+------------ CICLO FOR NUMEROS IMPARES --------------
+
+var MiArreglo = [];
+
+for (var i=1; i < 20; i +=2){
+    Miarreglo.push(i);    
+}
+
+console.log(MiArreglo);     NOS MOSTRARA TODOS LOS NUMEROS IMPARES EMPEZANDO POR EL 1 INCREMENTANDOSE EN 2 HASTA LLEGAR ANTES DEL NUMERO 20 (19)
+
+--------------- CICLO FOR CONTAR HACIA ATRAS ---------------
+
+var miArreglo = [];
+
+for (var i = 10; i > 0; i -= 2){
+    miArreglo.push(i);
+}
+
+console.log(miArreglo);
+
+COMO LA FUNCION EMPIEZA EN 10, MIENTRAS LA i SEA MAYOR QUE 0 IRA DISMINUYENDO EN 2
+
+
+--------- ITERAR SOBRE UN ARREGLO CON UN CICLO "FOR" ------------------
+
+var miArreglo = [4,6,8,2];
+var total = 0;
+
+for(var i=0; i < miArreglo.length; i++){
+    console.log("Iteracion " + i);
+    console.log(miArreglo[i]);
+    total += miArreglo[i];
+}
+
+console.log(total);
+
+OTRO EJEMPLO CON FUNCION
+
+function contarNumeroPares(arreglo){
+    var total=0;
+
+    for(var i=0; i < arreglo.length; i++){
+        if(arreglo[i] % 2 == 0){
+            total++;
+        }
+    }
+    return total;
+}
+
+console.log(contarNumerosPares([5,2,6,3,7,5,6,3]));     AQUI NOS SALDRA EL NUMERO 3 YA QUE SOLO HAY 3 NUMEROS LOS CUALES SON PARES
+
+
+----------- CICLOS FOR ANIDADOS ------------------
+
+var miArreglo = [[1, 2, [4, 5, 6], [7, 8, 9]];
+
+for (var i = 0; i < miArreglo. length; i++) {
+    console. log("> Nueva iteración") ;
+    var arregloAnidado = miArreglo[i];
+    console. log("Arreglo : " + arregloAnidado);
+
+    for (var j 0; j < arregloAnidado.length; j++) {
+        console.log (">>> Ciclo anidado ")
+        console. log( "Elemento: ")
+        console. log (arregloAnidado [j]); 
+    }
+}
+
+
+*/ CICLOS DO....WHILE */
+
+var x = 5;
+
+do{
+    console.log(x);
+    x++;
+}
+while (x < 10);
+
+ESTO AL METERLO EN CONSOLA EN CONSOLA, PRIMERO DE TODO NOS MOSTRARA EL CICLO, INCREMENTARA EN 1 YA QUE X ES MENOR QUE 10
+
+
+------------------------- BUSQUEDA DE PERFILES ------------------------------
+
+var contactos = [
+    {
+        "nombre": "Nora",
+        "apellido": "Nav",
+        "numero": "0543236543",
+        "gustos": ["Pizza","Programación"]
+    },
+    {
+        "nombre": "Harry",
+        "apellido": "Potter",
+        "numero" : "0994372684",
+        "gustos": ["Hogwarts", "Magia"]
+    },
+    {
+        "nombre": "Sherlock",
+        "apellido": "Holmes",
+        "numero": "0487345643",
+        "gustos":["Casos interesantes", "Violin"]
+    }
+];
+
+function buscarPerfil(nombre, propiedad){
+    for(var i=0; i < contactos.length; i++){
+        if(contactos[i].nombre === nombre){
+            return contactos[i][propiedad] || "La propiedad no existe";
+        }
+    }
+    return "El contacto no está en la lista.";
+}
+
+console.log(buscarPerfil("Harry", "apellido"))
+
+
+*/ NUMEROS ALEATORIOS */ 
+
+var NumeroAleatorio = Math.random();
+
+console.log(NumeroAleatorio);           NOS MOSTRARA NUMEROS ALEATORIAMENTE
+
+
+-------- NUMEROS ENTEROS ALEATORIOS ---------
+
+var NumeroAleatorioEntre0y19 = Math.floor(Math.random() * 20);
+
+console.log(NumeroAleatorioEntre0y19);
+
+OTRO EJEMPLO
+
+function generarEnteroAleatorio(limiteSuperior) {
+    //Generar un entero aleatorio entre 0 y el limite
+    // superior (sin incluirlo).
+    return Math.floor (Math.random() * limiteSuperior);
+}
+
+for(var i=0;  i < 15; i++){
+    console.log(generarEnteroAleptorio(5));             ESTO HARA QUE NOS BUSQUE 15 NUMEROS ALEATORIOS ENTRE EL 0 Y 4 YA QUE EL 5 NO ESTA INCLUIDO
+}
+
+
+-------- NUMEROS ENTEROS ALEATORIOS EN UN RANGO -----------
+
+function rangoAleatorio(limiteInterior, limitesuperior) {
+    return Math.floor (Math. random() * (limiteSuperior limiteInferior + 1)) + limiteInferior;
+    }
+
+    for (var i = 0; i < 15; i++) {
+    console.log(rangoAleatorio(3, 8));          ESTO HARA QUE NOS BUSQUE 15 NUMEROS ALEATORIOS ENTRE EL 3 Y EL 8
+    }
+
+
+--------------- RETORNAR MINIMO CON FUNCION ----------------
+
+function retornarMinimo(x, y){
+    console.log(x < y ? x : y);
+}
+
+retornarMinimo(4,7);        TE DEVOLVERA 4
+
+
+--------------- OPCIONES ------------------
+
+var a = 5;
+var b = 9;
+
+console.log(a > b ? a + 2 : b * 3);
+
+LOS : NOS INDICARA QUE ES LA OTRA OPCION Y COMO EN ESTE CASO LA PRIMERA CONDICION a > b NO ES CORRECTA, PASAREMOS A LA SEGUNDA QUE NOS DICE QUE b*3 ENTONCES NOS MOSTRARA 27
+
+
+----------------- COMPARAR NUMEROS --------------------
+
+function compararNumeros (a, b) {
+    if (a == b) {
+    return "a y b son iguales";
+    else if (a > b) {
+    return "a es mayor que b"
+    else
+    return "b es mayor que a";
+    }
+}
+
+ESTA SERIA LA FORMA SIMPLIFICADA
+
+function compararNumeros (a, b) {
+    return a == b ? "a y b son iguales"
+    : a > b ? "a es mayor que b"
+    : "b es mayor que a";
+
+ESTO NOS ESTA DICIENDO QUE SI LA CONDICION PRIMERA NO SE DA, VENDRA LA SIGUIENTE QUE NOS DICE QUE a > b Y SI ESTA NO SE DIERA, NOS QUEDARIA LA ULTIMA.
+
+
+*/ CONGELAR LAS VARIABLES */
+
+let colores = {
+    "verde": "#10e04b",
+    "azul": "#1b50e0",
+    "negro": "#000000",
+    "blanco": "#ffffff"
+};
+
+Object.freeze (colores);
+
+colores.amarillo = "#fff200;
+
+console.log(colores); NOS DARA UN TYPEERROR PORQUE NO NOS DEJARA AÑADIR LA PROPIEDAD AMARILLO YA QUE EL OBJETO LO HEMOS CONGELADO ANTES NI TAMPOCO REASIGNAR VALORES DE PROPIEDADES YA AÑADIDAS.
+
+
+----------- FUNCIONES FLECHA --------------
+
+SE UTILIZAN PARA DEFINIR FUNCIONES ANONIMAS, UNAS QUE NO TIENEN NOMBRE ESPECIFICO
+
+const FECHA = () => new Date();
+
+
+----------- FUNCIONES FLECHA CON PARAMETROS -----------------
+
+const sumarTres = (x) => x + 3;
+
+console.log(sumarTres(4));
+
+
+OTRO EJEMPLO
+
+const concatenarArreglos = function(arr1, arr2) {
+    return arr1.concat (arr2);                                      VAMOS A CONVERTIR ESTA FUNCION EN UNA FUNCION FLECHA
+};
+    console.log(concatenarArreglos ([1, 2], [3, 4, 5])):
+
+
+
+const concatenarArreglos = (arr1, arr2) => arr1.concat(arr2);           ASI QUEDARIA
+
+console.log (concatenarArreglos ([1, 2], [3, 4, 5])); I
+
+
+OTRO EJEMPLO
+
+const sumar = function(a, b) {
+    let num = 6;                                            VAMOS A CONVERTIR ESTA FUNCION EN UNA FLECHA
+    return a + b + num;
+};
+
+const sumar = (a, b) => {
+    let num = 6;                                            ASI QUEDARIA
+    return a + b + num;
+};
+
+
+--------------------- VALORES POR DEFECTOS PARA PARAMETROS -------------------------
+
+const incrementar = (num, valor = 1) => num + valor;
+
+console.log(incrementar (5));           AQUI NOS MOSTRARIA QUE EL VALOR ES 6, YA QUE 5 ES EL NUMERO Y NUESTRO VALOR PREDETERMINADO ES 1, QUE POR TANTO INCREMENTA
+console.log(incrementar (5, 3));        AQUI NOS MOSTRARIA QUE EL VALOR ES 8 YA QUE ESTAMOS DANDO EL NUMERO Y ADEMAS EL VALOR
+
+
+-------------------------- OPERADOR REST -------------------------
+
+NOS PERMITE PASAR CUALQUIER NUMERO DE ARGUMENTOS A UNA FUNCION Y QUE ESTOS ARGUMENTOS SE AGRUPEN COMO UN ARREGLO
+
+function miFuncion(...args){
+console. log(args);
+}
+
+miFuncion ([1, 2, 3], [4, 5, 6);
+
+
+----------------------- OPERADOR SPREAD --------------------------------
+
+NOS PERMITE TOMAR UN ARREGLO Y DESCOMPONERLO EN FUNCIONES
+
+const numeros = [1,2,3];
+
+function sumar(x, y, z)
+    console.log(x);
+    console.log(y);
+    console.log(z);
+    return x + y + z;
+}
+
+console.log(sumar(...numeros));
+
+
+--------------------- SINTAXIS DE DESESTRUCTURACION ---------------------
+
+const usuario = {
+    nombre: "Gino Smith",
+    edad: 34
+};
+
+const nombre usuario.nombre;
+const edad usuario.edad;
+
+const {nombre, edad) = usuario;
+
+OTRO EJEMPLO
+
+var coordenadas = {
+    X: 4,
+    y: 6,
+    z: 12
+};
+
+const {x, y, z} = coordenadas;
+
+console.log(x);
+console.log (y);
+console.log (z);
+
+------------------ SINTAXIS DE DESESTRUCTURACION OBJETOS ANIDADOS -----------------------
+
+const usuario = {
+    johnDoe: i
+    edad: 27,
+    correo: "johnDoe@freecodecamp.com
+    }
+};
+
+const {johnDoe: {edad, correo}} = usuario;
+
+console.log(edad);
+console.log(correo);
+
+
+OTRO EJEMPLO
+
+const PRONOSTICO_LOCAL = {
+    "ayer": {
+    minima: 61,
+    maxima: 75
+    },
+    "hoy": {
+    minima: 64,
+    maxima: 77
+    },
+    "mañana": {
+    minima: 68,
+    maxima: 80
+    }
+};
+
+Const minimaHoy = PRONOSTICO_LOCAL.hoy.minima;
+const maximaHoy = PRONOSTICO_LOCAL.hoy.maxima;
+
+console.log(minimaHoy);
+console.log(maximaHoy);
+
+
+------------------ SINTAXIS DE DESESTRUCTURACION ARREGLOS -----------------------
+
+var a
+var b;
+var c;
+
+[a, b,,, c] = [1, 2, 3, 4, 5, 6];
+
+console.log(a);         NOS MOSTRARA EL 1
+console.log (b);        NOS MOSTRARA EL 2
+console.log(c);         NOS MOSTRARA EL 5 YA QUE LAS COMAS CUENTAN COMO SIGUIENTE NUMERO
+
+
+------------------ SINTAXIS DE DESESTRUCTURACION CON EL OPERADOR REST -----------------------
+
+Const arregloInicial = [1,2,3,4,5,6,7,8];
+
+function removerTresPrimerosElementos(arreglo) {
+    const [,,, ...nuevoArreglo] = arreglo;
+    return nuevoArreglo;
+}
+
+const arregloFinal = removerTresPrimerosElementos (arregloInicial);
+console.log(arregloFinal);                                              NOS MOSTRARA DEL 4 PARA ADELANTE DEBIDO A LAS COMAS
+
+
+------------------ SINTAXIS DE DESESTRUCTURACION PASAR OBJETO COMO ARGUMENTO ----------------------
+
+var nuevoPerfilCliente = {
+    nombre: "Jane Doe",
+    edad: 24,
+    nacionalidad: "Española",
+    ubicacion: "España"
+};
+
+const actualizarPerfil = (informacionDePerfil) => {
+    const {nombre, edad, nacionalidad, ubicacion} = informacionDePerfil
+    console.log(nombre);
+    console.log(edad);
+    console.log(nacionalidad);
+    console.log(ubicacion);
+};
+
+actualizarPerfil(nuevoPerfilCliente);
+
+
+OTRO EJEMPLO
+
+const estadisticas = {
+    max: 56.78,
+    desviacionEstandar: 4.34,
+    mediana: 34.54,
+    moda: 23.87,
+    min: -0.75,
+    promedio: 35.855
+};
+
+const mitad = ({max, min}) => (max + min) / 2.0;
+
+console.log (mitad(estadisticas));
+
+-------------------- CREAR OBJETOS DE FORMA CONCISA ------------------------
+
+const crearPersona = (nombre, edad, idioma) = ({nombre, edad, idioma});
+
+console.log(crearPersona ( "Gino Smith", 28, "Español"));
+
+
+----------------------- METODOS ----------------------------
+
+Const persona =
+    nombre: "Isabel",
+    presentarse: function() {
+        return "!Hola! Mi nombre es ${this.nombre}.";
+    }
+};
+
+console.log(persona.presentarse());                 NOS PONDRA !HOLA! MI NOMBRE ES ISABEL
+
+
+--------------------------------- DEFINIR UNA CLASE ------------------------------
+
+class TransbordadorEspacial {
+    constructor(planeta) {
+        this.planeta = planeta;
+    }
+}
+
+var zeus = new TransbordadorEs pacial("Júpiter")
+console.log(zeus.planeta);
+
+var apolo = new TransbordadorEspacial("Marte") ;
+console.log (apolo.planeta);
+
+
+OTRO EJEMPLO
+
+class Mascota {
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad edad;
+    }
+}
+
+var miMascota = new Mascota("Nora", 5);
+var tuMascota = new Mascota("Gino", 2);
+
+
+------------------------------ GETTERS Y SETTERS --------------------------------------
+
+class Libro {
+    constructor(autor) {
+        this.autor = autor;
+    }
+    get autor () {
+        return this._autor;
+    }
+    set autor (nuevoAutor) {
+        console.log("Setter");
+        this._autor = nuevoAutor;
+    }
+}
+
+const libro = new Libro("anónimo");
+console.log(1ibro.autor);
+
+libro.autor = "Gino Smith";
+console.log(libro.autor);
+
+</body>
+</html>
+
