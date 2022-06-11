@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ex&aacute;men</title>
+    <link href="examen7.css" rel="stylesheet">
+    <script src="examen7.js"></script>
+</head>
+<body>
+    <form class="formulario" id="ej01">
+        <div class="titulo">1. NUMEROS DE DIAS</div>
+        <div class="enunciado">
+			<p>
+                A partir de un numero de dias, determinar el numero de años, meses y dias 
+            </p>
+		</div>
+        <div class="input-contenedor">
+            <input class="input" id="e1dia" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e1dia">Número Dias</label>
+        </div>
+		<div class="contenedor">
+			<p onclick="ejercicio01()"><span>CALCULAR</span></p>
+			<div class="respuesta" id="r1"></div>
+		</div>
+    </form>
+
+    
+	<form class="formulario" id="ej02">
+        <div class="titulo">2. EMPRESA</div>
+        <div class="enunciado">
+			En la empresa para la que trabajas, el jefe te pide que crees un programa para recalcular los sueldos de los empleados. Para ello necesitas introducir el
+            sueldo actual del empleado y los años de antiguedad.
+		</div>
+        <div class="input-contenedor">
+            <input id="e2i1" class="input" type="number" placeholder=" " />
+            <div class="partearriba partearriba-long"></div>
+            <label for="e2i1" class="placeholder">Sueldo</label>
+        </div>
+		<div class="input-contenedor">
+            <input id="e2i2" class="input" type="number" placeholder=" " />
+            <div class="partearriba partearriba-long"></div>
+            <label for="e2i2" class="placeholder">Años</label>
+        </div>
+		<div class="contenedor">
+			<p onclick="ejercicio02()"><span>SUELDO ACTUAL</span></p>
+			<div class="respuesta" id="r2"></div>
+		</div>
+
+    </form>
+
+	<form class="formulario" id="ej03">
+        <div class="titulo">3. SUMA DIVISORES</div>
+        <div class="enunciado">
+            <p>
+                Introduce un numero y calcula la suma de sus divisores. El numero sera pedido desde teclado. Dicho calculo sera realizado en una funcion
+                externa a la que llamaras "sumaDivisores". La funcion recibirá como parametro el número y devolvera la suma de todos los divisores de dicho numero, 
+                excepto de él mismo y la unidad. Por ejemplo la suma de los divisores de 6 daria como resultado 5 (2+3)
+            </p>
+        </div>
+
+        <div class="input-contenedor">
+            <input class="input" id="e3sd" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e3sd">Número</label>
+        </div>
+		<div class="contenedor">
+			<p onclick="ejercicio03()"><span>CALCULAR</span></p>
+			<div class="respuesta" id="r3"></div>
+		</div>
+    </form>
+</html>
