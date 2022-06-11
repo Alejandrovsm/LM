@@ -372,6 +372,6 @@ function contarDosCosas(ar) {
 }
 
 function totalSegundos(horas,min,seg) {
-    return = seg+(hor*3600)+(min*60);
+    return  seg+(hor*3600)+(min*60);
 
 }
