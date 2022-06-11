@@ -201,3 +201,10 @@ color: pink;
 	border: 8px solid rgb(177, 90, 14);
   border-radius: 120px;
 }
+
+ol {
+	font-size: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	color: pink;
+}

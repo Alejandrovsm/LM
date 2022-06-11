@@ -10,65 +10,103 @@
 </head>
 <body>
     <form class="formulario" id="ej01">
-        <div class="titulo">1. NUMEROS DE DIAS</div>
+        <div class="titulo">1. NUMEROS DESBORDADOS</div>
         <div class="enunciado">
 			<p>
-                A partir de un numero de dias, determinar el numero de años, meses y dias 
+            Crea una funcion llamada sum_cuad_dig que tendra como entrada un numero entero n y que devolvera como salida la suma de los cuadrados de sus digitos. Por ejemplo si n= 145. f(n)= 1^2+4^2+5^2= 1+16+25=42. <br>
+            Un numero es desbordado si la suma de sus digitos al cuadrado es mayor que el propio numero. Crea otra funcion llamada desbordado que tendrá como entrada un numero entero n y que devolvera como salida true si es un numero desbordado y false en caso contrario. <br>
+            Crea un formulario que admita un numero entero y que al pulsar el boton muestre en pantalla la suma de los digitos al cuadrado e indique si el numero es desbordado o no lo es.
             </p>
 		</div>
         <div class="input-contenedor">
-            <input class="input" id="e1dia" placeholder=" " type="number">
+            <input class="input" id="e1i1" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e1dia">Número Dias</label>
+            <label class="placeholder" for="e1i1">Número Entero</label>
         </div>
 		<div class="contenedor">
-			<p onclick="ejercicio01()"><span>CALCULAR</span></p>
+			<p onclick="ejercicio01()"><span>CALCULAR SUMA</span></p>
 			<div class="respuesta" id="r1"></div>
+		</div>
+        <div class="contenedor">
+			<p onclick="ejercicio01b()"><span>¿ES DESBORDADO?</span></p>
+			<div class="respuesta" id="r1b"></div>
+		</div>
 		</div>
     </form>
 
     
 	<form class="formulario" id="ej02">
-        <div class="titulo">2. EMPRESA</div>
+        <div class="titulo">2. FRUTERIA</div>
         <div class="enunciado">
-			En la empresa para la que trabajas, el jefe te pide que crees un programa para recalcular los sueldos de los empleados. Para ello necesitas introducir el
-            sueldo actual del empleado y los años de antiguedad.
+            <p>
+			Una fruteria pretende vender frutas por internet, venderá Peras a 3€/kilo, Manzanas a 2,5€/kilo, Fresas a 4€/kilo y Sandias a 1€/kilo. A partir de 5 kilos todos los productos se abaratan un 10%. Los gastos de envio son fijos y ascienden a 5€. <br>
+            Crea un formulario que permita determinar las solicitudes del cliente indicando la cantidad total a pagar y el desglose de cada producto. <br>
+            Los precios finales deberas mostrarlos escribiendo en el DOM y mostrandolos justo a continuacion del boton Calcular del formulario de la fruteria.
+            </p>
 		</div>
         <div class="input-contenedor">
-            <input id="e2i1" class="input" type="number" placeholder=" " />
-            <div class="partearriba partearriba-long"></div>
-            <label for="e2i1" class="placeholder">Sueldo</label>
+            <input class="input" id="e2per" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2per">Peras 3€/Kg</label>
         </div>
-		<div class="input-contenedor">
-            <input id="e2i2" class="input" type="number" placeholder=" " />
-            <div class="partearriba partearriba-long"></div>
-            <label for="e2i2" class="placeholder">Años</label>
+        <div class="input-contenedor">
+            <input class="input" id="e2man" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2man">Manzanas 2,5€/Kg</label>
         </div>
+        <div class="input-contenedor">
+            <input class="input" id="e2fre" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2fre">Fresas 4€/Kg</label>
+        </div>
+        <div class="input-contenedor">
+            <input class="input" id="e2san" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2san">Sandías 1€/Kg</label>
+        </div>
+
 		<div class="contenedor">
-			<p onclick="ejercicio02()"><span>SUELDO ACTUAL</span></p>
+			<p onclick="ejercicio02()"><span>CALCULA EL TOTAL</span></p>
 			<div class="respuesta" id="r2"></div>
 		</div>
-
     </form>
 
 	<form class="formulario" id="ej03">
-        <div class="titulo">3. SUMA DIVISORES</div>
+        <div class="titulo">3. COLECCION DE DISCOS</div>
         <div class="enunciado">
             <p>
-                Introduce un numero y calcula la suma de sus divisores. El numero sera pedido desde teclado. Dicho calculo sera realizado en una funcion
-                externa a la que llamaras "sumaDivisores". La funcion recibirá como parametro el número y devolvera la suma de todos los divisores de dicho numero, 
-                excepto de él mismo y la unidad. Por ejemplo la suma de los divisores de 6 daria como resultado 5 (2+3)
+            El ejercicio consiste en realizar un formulario para gestionar tu coleccion de discos. Para ello tendrás que crear un formulario en el que introduzcas el grupo y el nombre del album que quieras registrar. Cuando le des al boton de enviar, escribira fuera de la caja del formulario la entrada de dicho disco. En cada boton "?" se mostrará un mensaje con el contenido correspondiente del formulario.  
             </p>
         </div>
-
         <div class="input-contenedor">
-            <input class="input" id="e3sd" placeholder=" " type="number">
-            <div class="partearriba"></div>
-            <label class="placeholder" for="e3sd">Número</label>
+            <input class="input" id="grupo" placeholder=" " type="text">
+            <div class="partearriba partearriba-long"></div>
+            <label class="placeholder" for="grupo">Grupo</label>
         </div>
+		<span class="tooltip-contenedor" onclick="alert(grupo.value)" onmouseover="bandTip(ttband,grupo)">
+			<p class="questionmark">?</p>
+			<span class="tooltip" id="ttband"></span>
+		</span>
+
+		<div class="input-contenedor">
+            <input class="input" id="alb" placeholder=" " type="text">
+            <div class="partearriba partearriba-long"></div>
+            <label class="placeholder" for="alb">Album</label>
+        </div>
+		<span class="tooltip-contenedor" onclick="alert(alb.value)" onmouseover="bandTip(ttalb,alb)">
+			<p class="questionmark">?</p>
+			<span class="tooltip" id="ttalb"></span>
+		</span>
+
 		<div class="contenedor">
-			<p onclick="ejercicio03()"><span>CALCULAR</span></p>
-			<div class="respuesta" id="r3"></div>
+			<p onclick="enviar()"><span>ENVIAR</span></p>
+			<p id="magiaborras" onclick="cancelar()"><span>CANCELAR</span></p>
 		</div>
     </form>
+    <div class="formulario" id="colores">
+        <div class="titulo">GRUPAZOS</div>
+        <ol id="grupazos"></ol>
+    </div>
+    
+</body>
 </html>

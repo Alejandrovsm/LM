@@ -9,66 +9,114 @@
     <script src="examen5.js"></script>
 </head>
 <body>
+
     <form class="formulario" id="ej01">
-        <div class="titulo">1. NUMEROS DE DIAS</div>
+        <div class="titulo">1. SUMA DIVISORES</div>
+
         <div class="enunciado">
-			<p>
-                A partir de un numero de dias, determinar el numero de años, meses y dias 
-            </p>
-		</div>
-        <div class="input-contenedor">
-            <input class="input" id="e1dia" placeholder=" " type="number">
-            <div class="partearriba"></div>
-            <label class="placeholder" for="e1dia">Número Dias</label>
+            Crea una funcion llamada sumaDivisores que tendrá  como entrada un numero entero n y que devolvera como salida la suma de todos sus divisores excepto el propio numero. Ejemplo: sumaDivisores(8): 1+2+4=7. 
         </div>
+		<div class="input-contenedor">
+            <input id="e1i1" class="input" type="number" placeholder=" " />
+            <div class="partearriba"></div>
+            <label for="e1i1" class="placeholder">Número Entero</label>
+        </div>
+
 		<div class="contenedor">
-			<p onclick="ejercicio01()"><span>CALCULAR</span></p>
+			<p onclick="ejercicio01()"><span>SUMAR DIVISORES</span></p>
 			<div class="respuesta" id="r1"></div>
 		</div>
     </form>
 
-    
-	<form class="formulario" id="ej02">
-        <div class="titulo">2. EMPRESA</div>
+
+    <form class="formulario" id="ej01nota">
+        <div class="titulo">1B. PERFECTOS</div>
         <div class="enunciado">
-			En la empresa para la que trabajas, el jefe te pide que crees un programa para recalcular los sueldos de los empleados. Para ello necesitas introducir el
-            sueldo actual del empleado y los años de antiguedad.
-		</div>
-        <div class="input-contenedor">
-            <input id="e2i1" class="input" type="number" placeholder=" " />
-            <div class="partearriba partearriba-long"></div>
-            <label for="e2i1" class="placeholder">Sueldo</label>
-        </div>
+            Crea una funcion llamada perfecto que tendra como entrada un numero entero n y que devolvera como salida verdadero o falso si el numero de entrada es perfecto. Un numero entero n es perfecto si es igual a la suma de sus divisores. Por ejemplo: sumaDivisores(6) = 1+2+3=6, luego 6 es perfecto. <br>
+            Crea un formulario que admita un numero entero y que al pulsar el boton muestre en pantalla TODOS los numeros curiosos desde 2 hasta el numero introducido.		</div>
 		<div class="input-contenedor">
-            <input id="e2i2" class="input" type="number" placeholder=" " />
-            <div class="partearriba partearriba-long"></div>
-            <label for="e2i2" class="placeholder">Años</label>
+            <input id="eNi1" class="input" type="number" placeholder=" " />
+            <div class="partearriba"></div>
+            <label for="eNi1" class="placeholder">Número Inicial</label>
+        </div>
+        <div class="input-contenedor">
+            <input id="eNi2" class="input" type="number" placeholder=" " />
+            <div class="partearriba"></div>
+            <label for="eNi2" class="placeholder">Número Final</label>
         </div>
 		<div class="contenedor">
-			<p onclick="ejercicio02()"><span>SUELDO ACTUAL</span></p>
+		<p onclick="curiosos()"><span>¿NUMERO CURIOSO?</span></p>
+		<div class="respuesta" id="r1b"></div>
+	    </div>
+    </form>
+    
+	<form class="formulario" id="ej02">
+        <div class="titulo">2. VIAJE DE ESTUDIOS</div>
+        <div class="enunciado">
+			<p>
+                El viaje de una escuela está organizando un viaje de estudios, y requiere determinar cuanto debe cobrar a cada alumno y cuanto debe pagar a la compañia de transporte por el servicio. <br>
+                La forma de cobrar es la siguiente: si son 100 alumnos o mas, el costo por cada alumno es de 65€; de 50 a 99 alumnos, el costo es de 70€, de 30 a 49, de 95€, y si son menos de 30, el costo del alquiler del autobus es de 4000€, sin importar el numero de alumnos. <br>
+                Crea un formulario que permita determinar el pago a la compañiia de autobuses y lo que debe pagar a cada alumno por el viaje.
+            </p>
+		</div>
+        <div class="input-contenedor">
+            <input class="input" id="e2per" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e2per">Numero alumnos</label>
+        </div>
+		<div class="contenedor">
+			<p onclick="ejercicio02()"><span>CALCULA EL TOTAL</span></p>
 			<div class="respuesta" id="r2"></div>
 		</div>
-
     </form>
 
 	<form class="formulario" id="ej03">
-        <div class="titulo">3. SUMA DIVISORES</div>
+        <div class="titulo">3. COLECCION DE DISCOS</div>
         <div class="enunciado">
             <p>
-                Introduce un numero y calcula la suma de sus divisores. El numero sera pedido desde teclado. Dicho calculo sera realizado en una funcion
-                externa a la que llamaras "sumaDivisores". La funcion recibirá como parametro el número y devolvera la suma de todos los divisores de dicho numero, 
-                excepto de él mismo y la unidad. Por ejemplo la suma de los divisores de 6 daria como resultado 5 (2+3)
+                El usuario puede introducir grupos de musica al teclearlos en la primera caja de textos o al seleccionarlos desde una lista que ya contiene las siguientes opciones: -Selecciona grupo-, Guns N'Roses, Queen y AC/DC. <br>
+                Al darle al boton enviar se comprueba si hay algo escrito en Grupo, en ese caso se escribe una linea nueva en la parte inferior de la pagina con el nombre del Grupo y el Titulo introducido. Si Grupo esta vacio se comprueba que haya seleccionado algo en Grupos disponibles y se escribira una nueva linea con esos datos. Si no hay nada en Grupo o Grupos disponibles mostrar un alert diciendo que hay que introducir algo. En cualquier caso debe haber algo en Título sino mostrar un alert diciendo que hay que introducir algo. <br>
+                Añade un boton para poder borrar un elemento de la coleccion. El numero del elemento a borrar se añade en un nuevo control. Un nodo se puede borrar así: padre.removeChild(hijo);
             </p>
         </div>
-
         <div class="input-contenedor">
-            <input class="input" id="e3sd" placeholder=" " type="number">
-            <div class="partearriba"></div>
-            <label class="placeholder" for="e3sd">Número</label>
+            <input id="grupo" class="input" type="text" placeholder=" ">
+            <div class="partearriba partearriba-long"></div>
+            <label for="grupo" class="placeholder">Grupo</label>
         </div>
+		<div class="input-contenedor">
+			<input list="bands" name="mbands" id="mbands" class="input" placeholder=" ">
+			<div class="partearriba"></div>
+			<label for="mbands" class="placeholder">--Selecciona--</label>
+			<datalist id="bands">
+				<option value="Guns N'Roses">
+				<option value="Queen">
+				<option value="AC/DC">
+			</datalist>
+        </div>
+		<div class="input-contenedor">
+            <input id="alb" class="input" type="text" placeholder=" ">
+            <div class="partearriba partearriba-long"></div>
+            <label for="alb" class="placeholder">Album</label>
+        </div>
+
+		<div class="input-contenedor">
+            <input id="bnum" class="input" type="number" placeholder=" ">
+            <div class="partearriba partearriba-long"></div>
+            <label for="bnum" class="placeholder">Borrar Número...</label>
+        </div>
+
 		<div class="contenedor">
-			<p onclick="ejercicio03()"><span>CALCULAR</span></p>
-			<div class="respuesta" id="r3"></div>
+			<p onclick="enviar()">ENVIAR</p>
+			<p onclick="cancelar()">CANCELAR</p>
+			<p onclick="borrar()">BORRAR</p>
 		</div>
+
     </form>
+
+    <div class="formulario" id="colores">
+        <div class="titulo">GRUPAZOS</div>
+        <ol id="grupazos"></ol>
+    </div>
+
 </html>
