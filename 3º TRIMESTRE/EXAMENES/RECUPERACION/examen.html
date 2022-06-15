@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ex&aacute;men</title>
+    <link href="examen.css" rel="stylesheet">
+    <script src="examen.js"></script>
+</head>
+<body>
+    <form class="formulario" id="ej01">
+        <div class="titulo">1. CONVERTIR</div>
+        <div class="enunciado">
+			<p>
+            Diseña una funcion llamada convertir que permita pasar una cantidad de centimetros a pies, pulgadas o palmos. El formulario muestra una caja de texto y tres botones con 
+            las tres diferentes opciones. La funcion recibe como parametros el valor en centimetros y la opcion deseada (1,2, o 3). Dependiendo de esa opcion la funcion calcula la equivalencia correcta y la 
+            devuelve el resultado con dos decimales con return. Posteriormente se muestra por pantalla con alert, indicando la equivalencia
+            </p>
+		</div>
+        <div class="input-contenedor">
+            <input class="input" id="e1dia" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e1dia">Número cm</label>
+        </div>
+        <div class="contenedor">
+                <p onclick="pulgada()">PULGADA</p>
+                <p onclick="palmo()">PALMO</p>
+                <p onclick="pie()">PIE</p>
+        </div>
+			<div class="respuesta" id="r1"></div>
+		</div>
+    </form>
+
+    
+	<form class="formulario" id="ej02">
+        <div class="titulo">2. TABLA MULTIPLICAR</div>
+        <div class="enunciado">
+            <p>
+			Crea una funcion llamada tabla que permita imprimir por pantalla la tabla de multiplicar del numero recibido como parametro. Por ejemplo, para el numero 3:
+            </p>
+		</div>
+        <div class="input-contenedor">
+            <input id="e2tb" class="input" type="number" placeholder=" " />
+            <div class="partearriba partearriba-long"></div>
+            <label for="e2tb" class="placeholder">Número</label>
+        </div>
+		<div class="contenedor">
+			<p onclick="ejercicio02()"><span>TABLA MULTIPLICAR</span></p>
+			<div class="respuesta" id="r2"></div>
+		</div>
+
+    </form>
+
+	<form class="formulario" id="ej03">
+        <div class="titulo">3. DIAS</div>
+        <div class="enunciado">
+            <p>
+                Crea una funcion llamada días que reciba un número comprendido entre 1 y 12 desde una lista desplegable y muestre un parrafo bajo el formulario usando DOM el nombre del mes 
+                correspondiente y el numero de dias que hay desde principios de año hasta ese mes (incluido).
+            </p>
+        </div>
+
+        <div class="input-contenedor">
+            <input class="input" id="e3sd" placeholder=" " list="meses">
+            <div class="partearriba"></div>
+            <label for="m.meses" class="placeholder">--Selecciona--</label>
+			<datalist id="meses">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </datalist>
+        </div>
+		<div class="contenedor">
+			<p onclick="ejercicio03()"><span>CALCULAR</span></p>
+			<div class="respuesta" id="r3"></div>
+		</div>
+    </form>
+
+    <form class="formulario" id="ej04">
+        <div class="titulo">4. DIVISORES</div>
+        <div class="enunciado">
+			<p>
+                Crea una funcion llamada divisores que reciba tres parametros y muestre por pantalla los divisores del primer numero comprendidos entre el segundo y el tercero. Asi, si la funcion es llamada de esta manera 
+                divisores(34,1,20) la funcion mostraría todos los divisores de 34 comprendidos entre 1 y 20 ---> (1,2 y 17). Cada divisor debe mostrarse usando el DOM en una linea distinta con el siguiente formato: 
+            </p>
+		</div>
+        <div class="input-contenedor">
+            <input class="input" id="e1dia" placeholder=" " type="number">
+            <div class="partearriba"></div>
+            <label class="placeholder" for="e1dia">Número</label>
+        </div>
+		<div class="contenedor">
+			<p onclick="ejercicio04()"><span>DIVISORES</span></p>
+			<div class="respuesta" id="r4"></div>
+		</div>
+    </form>
+    <script src="examen.js"></script>
+    </body>
+</html>
