@@ -19,14 +19,14 @@
             </p>
 		</div>
         <div class="input-contenedor">
-            <input class="input" id="e1dia" placeholder=" " type="number">
+            <input class="input" id="e1num" placeholder=" " type="number">
             <div class="partearriba"></div>
-            <label class="placeholder" for="e1dia">Número cm</label>
+            <label class="placeholder" for="e1num">Número cm</label>
         </div>
         <div class="contenedor">
                 <p onclick="pulgada()">PULGADA</p>
-                <p onclick="palmo()">PALMO</p>
-                <p onclick="pie()">PIE</p>
+                <p onclick="pulgada()">PALMO</p>
+                <p onclick="pulgada()">PIE</p>
         </div>
 			<div class="respuesta" id="r1"></div>
 		</div>
@@ -62,9 +62,9 @@
         </div>
 
         <div class="input-contenedor">
-            <input class="input" id="e3sd" placeholder=" " list="meses">
+            <input class="input" id="e3dia" placeholder=" " list="meses">
             <div class="partearriba"></div>
-            <label for="m.meses" class="placeholder">--Selecciona--</label>
+            <label for="mmeses" class="placeholder">--Selecciona--</label>
 			<datalist id="meses">
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -81,7 +81,7 @@
             </datalist>
         </div>
 		<div class="contenedor">
-			<p onclick="ejercicio03()"><span>CALCULAR</span></p>
+			<p onclick="ejercicio03()"><span>DIAS</span></p>
 			<div class="respuesta" id="r3"></div>
 		</div>
     </form>
@@ -95,9 +95,19 @@
             </p>
 		</div>
         <div class="input-contenedor">
-            <input class="input" id="e1dia" placeholder=" " type="number">
-            <div class="partearriba"></div>
-            <label class="placeholder" for="e1dia">Número</label>
+            <input id="e4adiv" class="input" type="number" placeholder=" " />
+            <div class="partearriba partearriba-long"></div>
+            <label for="e4adiv" class="placeholder">Número</label>
+        </div>
+		<div class="input-contenedor">
+            <input id="e4bdiv" class="input" type="number" placeholder=" " />
+            <div class="partearriba partearriba-long"></div>
+            <label for="e4bdiv" class="placeholder">Número</label>
+        </div>
+        <div class="input-contenedor">
+            <input id="e4cdiv" class="input" type="number" placeholder=" " />
+            <div class="partearriba partearriba-long"></div>
+            <label for="e4cdiv" class="placeholder">Número</label>
         </div>
 		<div class="contenedor">
 			<p onclick="ejercicio04()"><span>DIVISORES</span></p>
