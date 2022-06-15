@@ -9,7 +9,7 @@ function tabla(n) {
 }
 
 function ejercicio02() {
-	let res;
+	let res = "";
     let entrada = e2tb.value;
     let bonito = tabla(entrada);
         for(let i=0; i<bonito.length;i++){
@@ -91,8 +91,7 @@ function ejercicio04(){
     let entrada2 = e4bdiv.value;
     let entrada3 = e4cdiv.value
     for(i=entrada2; i<=entrada3; i++){
-        if (i % entrada1 == 0){
-            array.push(i);
+        if (entrada1 % i == 0){
             r4.innerHTML += "divisor: "+i+"<br>";
         }
     }
