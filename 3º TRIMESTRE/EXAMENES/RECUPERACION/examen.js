@@ -85,17 +85,18 @@ function pie(entrada){
     r1.innerHTML = convertir(entrada, pies).toFixed(2);
 }
 
+let res3 = ""
 function ejercicio04(){
-    let array = [];
     let entrada1 = e4adiv.value;
     let entrada2 = e4bdiv.value;
     let entrada3 = e4cdiv.value
     for(i=entrada2; i<=entrada3; i++){
         if (i % entrada1 == 0){
             array.push(i);
-            r4.innerHTML += "Divisor:"`${array}`;
+            r4.innerHTML += "divisor: "+i+"<br>";
         }
     }
+    return res3;   
 }
 
 
