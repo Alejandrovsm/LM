@@ -9,7 +9,7 @@ function tabla(n) {
 }
 
 function ejercicio02() {
-	let res = "";
+	let res ;
     let entrada = e2tb.value;
     let bonito = tabla(entrada);
         for(let i=0; i<bonito.length;i++){
